@@ -27,6 +27,7 @@
   5. functions for each page with:
        - the sections of manual vs auto-update content and their order
        - how to sort the auto-update content
+       - applying the formatting and creating item lists using pmap or something like that
        - (optional this could also be part of manual content) how to combine the auto-update content using headings
          
 ## creating pages
