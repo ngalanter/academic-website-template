@@ -11,23 +11,28 @@
 
 # Auto-update R code set-up
 
-1. helper functions to make code mode interpretable and easier to modify, each step uses the previous
-  a. functions for basic formatting make sure they can be used in combination, examples:
-    +   italics
-    +   bolding
-    +   turning text into a headline
-    +   creating a link from two fields
-  b.  functions for formatting each type of item, examples:
-    + publications on publications page
-    + projects on home page
-    + publications on cv
-  c. functions for each page with:
-    + the sections of manual vs auto-update content and their order
-    + how to sort the auto-update content
-    + (option this could also be part of manual content) how to combine the auto-update content using headings
-2. creating pages
-  a. read in content csv
-  b. read in pages
-  c. (optional in case forget to commit beforehand) save old pages as a backup
-  c. run page functions
-  d. save new pages
+## helper functions to make code mode interpretable and easier to modify
+
+  1. functions for basic formatting make sure they can be used in combination, examples:
+       - italics
+       - bolding
+       - turning text into a headline
+       - creating a link from two fields
+         
+  3.  functions for formatting each type of item, examples:
+       - publications on publications page
+       - projects on home page
+       - publications on cv
+         
+  5. functions for each page with:
+       - the sections of manual vs auto-update content and their order
+       - how to sort the auto-update content
+       - (optional this could also be part of manual content) how to combine the auto-update content using headings
+         
+## creating pages
+
+  1. read in content csv
+  2. read in pages
+  3. (optional in case forget to commit beforehand) save old pages as a backup
+  4. run page functions
+  5. save new pages
