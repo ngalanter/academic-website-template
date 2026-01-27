@@ -1,0 +1,58 @@
+{
+  "index.qmd": {
+    "index.html": "d3eea9c1"
+  },
+  "about.qmd": {
+    "about.html": "3c3754df"
+  },
+  "cv1.qmd": {
+    "cv1.html": "ccb06aa0"
+  },
+  "cv_resume2.qmd": {
+    "cv_resume2.html": "b4327049"
+  },
+  "cv_resume1.qmd": {
+    "cv_resume1.html": "69cf76b6",
+    "cv_resume1.pdf": "646714a0",
+    "cv_resume1.tex": "0e63bef9"
+  },
+  "publications.qmd": {
+    "publications.html": "cc407adf"
+  },
+  "research.qmd": {
+    "research.html": "b178d350"
+  },
+  "blog.qmd": {
+    "blog.html": "95754316"
+  },
+  "more_about.qmd": {
+    "more_about.html": "2fb8d2e6"
+  },
+  "portfolio.qmd": {
+    "portfolio.html": "6e683fcf"
+  },
+  "posts/post1.qmd": {
+    "post1.html": "ebb5b349"
+  },
+  "posts/post2.qmd": {
+    "post2.html": "ed59d695"
+  },
+  "projects.qmd": {
+    "projects.html": "25167e74"
+  },
+  "reading_list.qmd": {
+    "reading_list.html": "b9fd256c"
+  },
+  "rec_lists.qmd": {
+    "rec_lists.html": "6e46b79d"
+  },
+  "resources.qmd": {
+    "resources.html": "45a5ccb4"
+  },
+  "software.qmd": {
+    "software.html": "dbd0ed50"
+  },
+  "teaching.qmd": {
+    "teaching.html": "494d4b26"
+  }
+}
