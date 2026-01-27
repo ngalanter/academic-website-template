@@ -1,0 +1,134 @@
+---
+title: Curriculum Vitae or Resume Format 1
+format:
+  html: default
+  pdf:
+    colorlinks: false
+    mainfont: Open Sans
+    include-in-header:
+      text: |
+        \usepackage[lmargin = 0.7in,rmargin = 0.7in,
+        tmargin =0.9in, bmargin = 0.9in]{geometry}
+        \usepackage{fancyhdr}
+        \pagestyle{fancy}
+        
+        \fancyhf{}
+        \rhead{\thepage}
+        \lhead{Name Name}
+        
+        \makeatletter         
+        \renewcommand\maketitle{
+        \begin{center}
+        {\Large \textbf{Name Name}}\\
+        \vspace{1mm}
+        \normalsize email\\
+        \vspace{1mm}
+        Updated Month YYYY
+        \end{center}} 
+        \makeatother
+     
+        \addtokomafont{disposition}{\rmfamily}
+format-links: [pdf]
+---
+
+::: {.content-hidden when-format="pdf"}
+Just as with a standard cv or resume, use whatever headings and format makes the most sense for you. These sections are just examples. See [here](https://quarto.org/docs/authoring/markdown-basics.html) for an overview of markdown formatting in quarto.
+:::
+
+
+## EDUCATION
+
+#### Instition, Location
+Degree, Field, Graduation Month YYYY
+
+Other Details
+
+#### Instition, Location
+Degree, Field, Graduation Month YYYY
+
+Other Details
+
+## RESEARCH EXPERIENCE
+
+### GRADUATE STUDENT RESEARCHER
+
+#### Project
+Institution/Company,  Month YYYY -- Month YYYY
+
+Supervisor/Advisor/Mentor: Name (if this is relevant)
+
+- details
+
+#### Project
+Institution/Company,  Month YYYY -- Month YYYY
+
+Supervisor/Advisor/Mentor: Name (if this is relevant)
+
+- details
+
+### UNDERGRADUATE STUDENT RESEARCHER
+
+#### Project
+Institution/Company,  Month YYYY -- Month YYYY
+
+Supervisor/Advisor/Mentor: Name (if this is relevant)
+
+- details
+
+#### Project
+Institution/Company,  Month YYYY -- Month YYYY
+
+Supervisor/Advisor/Mentor: Name (if this is relevant)
+
+- details
+
+## PUBLICATIONS
+
+**Your name**, Author (YYYY). [title](https://doi.org). *Journal.*
+
+Author, **Your name**, Author (YYYY). [title](https://doi.org). *Journal.*
+
+## TEACHING EXPERIENCE
+
+## PRESENTATIONS AND POSTERS
+
+### PRESENTATIONS
+
+#### [Talk Name](https://github.com) 
+Event/Conference, Location, Month YYYY
+
+Event/Conference, Location, Month YYYY
+
+#### Talk Name
+Event/Conference, Location, Month YYYY
+
+### POSTERS
+
+#### [Poster Name](https://github.com) 
+Event/Conference, Location, Month YYYY
+
+## PROFESSIONAL SERVICE
+
+### Institution
+
+Role, Committee/Group, Month YYYY -- Month YYYY
+
+Role, Committee/Group, Month YYYY -- Month YYYY
+
+### Institution/National Organization
+
+Role, Committee/Group, Month YYYY -- Month YYYY
+
+### Reviewer
+
+Journal
+
+
+::: {.content-hidden when-format="html"}
+## References
+Available upon request
+:::
+
+::: {.content-hidden when-format="pdf"}
+HTML/PDF formatting option inspired by [this page](https://www.cynthiahqy.com/posts/cv-html-pdf/).
+:::

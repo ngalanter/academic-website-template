@@ -1,0 +1,33 @@
+---
+title: Publications
+---
+
+You may want to divide your publications by type (preprints, journal articles, others) or by theme.
+
+## Sorted by type
+
+### Preprints
+
+**Your name**, Author (Preprint). [title](https://arxiv.org/).
+
+### Journal Articles
+
+**Your name**, Author (YYYY). [title](https://doi.org). *Journal.*
+
+Author, **Your name**, Author (YYYY). [title](https://doi.org). *Journal.*
+
+## Sorted by theme
+
+### Statistical Methods
+
+**Your name**, Author (Preprint). [title](https://arxiv.org/).
+
+**Your name**, Author (YYYY). [title](https://doi.org). *Journal.*
+
+### Public Health and Medicine Applications
+
+Author, **Your name**, Author (YYYY). [title](https://doi.org). *Journal.*
+
+### Other
+
+**Your name**, Author (YYYY). [title](https://doi.org). *Journal.*
