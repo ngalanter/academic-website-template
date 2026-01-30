@@ -215,5 +215,26 @@
     "title": "Software",
     "section": "",
     "text": "Below is a list of R (or whatever software is relevant) packages I have contributed to.\n\npackagename\nRole either in full words or cre,‘aut’,ctb, etc. R package standard roles listed here\nPackage descption and how to access it.\n\n\npackagename\nRole either in full words or cre,‘aut’,ctb, etc. R package standard roles listed here\nPackage descption and how to access it.\n\n\npackagename\nRole either in full words or cre,‘aut’,ctb, etc. R package standard roles listed here\nPackage descption and how to access it."
+  },
+  {
+    "objectID": "draft-auto-update-workflow.html",
+    "href": "draft-auto-update-workflow.html",
+    "title": "Preparing other site pages for auto update",
+    "section": "",
+    "text": "add blocks with strings seperating out the auto-update content from the manual page content\n\ncould use conditional content, like ::: {.content-hidden unless-format=\"markdown\"} index_news_auto  ::: then ::: {.content-hidden unless-format=\"markdown\"} end_index_news_auto  :::"
+  },
+  {
+    "objectID": "draft-auto-update-workflow.html#helper-functions-to-make-code-mode-interpretable-and-easier-to-modify",
+    "href": "draft-auto-update-workflow.html#helper-functions-to-make-code-mode-interpretable-and-easier-to-modify",
+    "title": "Preparing other site pages for auto update",
+    "section": "helper functions to make code mode interpretable and easier to modify",
+    "text": "helper functions to make code mode interpretable and easier to modify\n\nfunctions for basic formatting make sure they can be used in combination, examples:\n\nitalics\nbolding\nturning text into a headline\ncreating a link from two fields\n\nfunctions for formatting each type of item, examples:\n\npublications on publications page\nprojects on home page\npublications on cv\n\nfunctions for each page with:\n\nthe sections of manual vs auto-update content and their order\nhow to sort the auto-update content\napplying the formatting and creating item lists using pmap or something like that\n(optional this could also be part of manual content) how to combine the auto-update content using headings"
+  },
+  {
+    "objectID": "draft-auto-update-workflow.html#creating-pages",
+    "href": "draft-auto-update-workflow.html#creating-pages",
+    "title": "Preparing other site pages for auto update",
+    "section": "creating pages",
+    "text": "creating pages\n\nread in content csv\nread in pages\n(optional in case forget to commit beforehand) save old pages as a backup\nrun page functions\nsave new pages"
   }
 ]

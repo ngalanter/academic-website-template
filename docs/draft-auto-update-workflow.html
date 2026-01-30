@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Curriculum Vitae or Resume Format 1 – Name</title>
+<title>draft-auto-update-workflow – Name</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -182,155 +182,66 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#education" id="toc-education" class="nav-link active" data-scroll-target="#education">EDUCATION</a></li>
-  <li><a href="#research-experience" id="toc-research-experience" class="nav-link" data-scroll-target="#research-experience">RESEARCH EXPERIENCE</a>
-  <ul class="collapse">
-  <li><a href="#graduate-student-researcher" id="toc-graduate-student-researcher" class="nav-link" data-scroll-target="#graduate-student-researcher">GRADUATE STUDENT RESEARCHER</a></li>
-  <li><a href="#undergraduate-student-researcher" id="toc-undergraduate-student-researcher" class="nav-link" data-scroll-target="#undergraduate-student-researcher">UNDERGRADUATE STUDENT RESEARCHER</a></li>
-  </ul></li>
-  <li><a href="#publications" id="toc-publications" class="nav-link" data-scroll-target="#publications">PUBLICATIONS</a></li>
-  <li><a href="#teaching-experience" id="toc-teaching-experience" class="nav-link" data-scroll-target="#teaching-experience">TEACHING EXPERIENCE</a></li>
-  <li><a href="#presentations-and-posters" id="toc-presentations-and-posters" class="nav-link" data-scroll-target="#presentations-and-posters">PRESENTATIONS AND POSTERS</a>
-  <ul class="collapse">
-  <li><a href="#presentations" id="toc-presentations" class="nav-link" data-scroll-target="#presentations">PRESENTATIONS</a></li>
-  <li><a href="#posters" id="toc-posters" class="nav-link" data-scroll-target="#posters">POSTERS</a></li>
-  </ul></li>
-  <li><a href="#professional-service" id="toc-professional-service" class="nav-link" data-scroll-target="#professional-service">PROFESSIONAL SERVICE</a>
-  <ul class="collapse">
-  <li><a href="#institution" id="toc-institution" class="nav-link" data-scroll-target="#institution">Institution</a></li>
-  <li><a href="#institutionnational-organization" id="toc-institutionnational-organization" class="nav-link" data-scroll-target="#institutionnational-organization">Institution/National Organization</a></li>
-  <li><a href="#reviewer" id="toc-reviewer" class="nav-link" data-scroll-target="#reviewer">Reviewer</a></li>
-  </ul></li>
-  </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="cv_resume1.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Curriculum Vitae or Resume Format 1</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<p>Just as with a standard cv or resume, use whatever headings and format makes the most sense for you. These sections are just examples. See <a href="https://quarto.org/docs/authoring/markdown-basics.html">here</a> for an overview of markdown formatting in quarto.</p>
-<section id="education" class="level2">
-<h2 class="anchored" data-anchor-id="education">EDUCATION</h2>
-<section id="instition-location" class="level4">
-<h4 class="anchored" data-anchor-id="instition-location">Instition, Location</h4>
-<p>Degree, Field, Graduation Month YYYY</p>
-<p>Other Details</p>
-</section>
-<section id="instition-location-1" class="level4">
-<h4 class="anchored" data-anchor-id="instition-location-1">Instition, Location</h4>
-<p>Degree, Field, Graduation Month YYYY</p>
-<p>Other Details</p>
-</section>
-</section>
-<section id="research-experience" class="level2">
-<h2 class="anchored" data-anchor-id="research-experience">RESEARCH EXPERIENCE</h2>
-<section id="graduate-student-researcher" class="level3">
-<h3 class="anchored" data-anchor-id="graduate-student-researcher">GRADUATE STUDENT RESEARCHER</h3>
-<section id="project" class="level4">
-<h4 class="anchored" data-anchor-id="project">Project</h4>
-<p>Institution/Company, Month YYYY – Month YYYY</p>
-<p>Supervisor/Advisor/Mentor: Name (if this is relevant)</p>
+<section id="preparing-other-site-pages-for-auto-update" class="level1">
+<h1>Preparing other site pages for auto update</h1>
 <ul>
-<li>details</li>
+<li>add blocks with strings seperating out the auto-update content from the manual page content
+<ul>
+<li>could use conditional content, like <code>::: {.content-hidden unless-format="markdown"} index_news_auto  :::</code> then <code>::: {.content-hidden unless-format="markdown"} end_index_news_auto  :::</code></li>
+</ul></li>
 </ul>
 </section>
-<section id="project-1" class="level4">
-<h4 class="anchored" data-anchor-id="project-1">Project</h4>
-<p>Institution/Company, Month YYYY – Month YYYY</p>
-<p>Supervisor/Advisor/Mentor: Name (if this is relevant)</p>
+<section id="preparing-auto-update-content" class="level1">
+<h1>Preparing auto-update content</h1>
 <ul>
-<li>details</li>
+<li>create a csv with fields appplicable to articles, presentations, software, etc, including item type, subtype (like methods as a article subtype), and project (if using a layout separated by projects)</li>
+<li>bonus goal: write a funtion that takes a <code>.bib</code> file and outputs/appends to a csv all fields with info present in that file (so excluding things like subtype and project)</li>
+<li>for any associated pictures, create a folder of pictures and add the names to the csv</li>
 </ul>
 </section>
-</section>
-<section id="undergraduate-student-researcher" class="level3">
-<h3 class="anchored" data-anchor-id="undergraduate-student-researcher">UNDERGRADUATE STUDENT RESEARCHER</h3>
-<section id="project-2" class="level4">
-<h4 class="anchored" data-anchor-id="project-2">Project</h4>
-<p>Institution/Company, Month YYYY – Month YYYY</p>
-<p>Supervisor/Advisor/Mentor: Name (if this is relevant)</p>
+<section id="auto-update-r-code-set-up" class="level1">
+<h1>Auto-update R code set-up</h1>
+<section id="helper-functions-to-make-code-mode-interpretable-and-easier-to-modify" class="level2">
+<h2 class="anchored" data-anchor-id="helper-functions-to-make-code-mode-interpretable-and-easier-to-modify">helper functions to make code mode interpretable and easier to modify</h2>
+<ol type="1">
+<li>functions for basic formatting make sure they can be used in combination, examples:
 <ul>
-<li>details</li>
-</ul>
-</section>
-<section id="project-3" class="level4">
-<h4 class="anchored" data-anchor-id="project-3">Project</h4>
-<p>Institution/Company, Month YYYY – Month YYYY</p>
-<p>Supervisor/Advisor/Mentor: Name (if this is relevant)</p>
+<li>italics</li>
+<li>bolding</li>
+<li>turning text into a headline</li>
+<li>creating a link from two fields</li>
+</ul></li>
+<li>functions for formatting each type of item, examples:
 <ul>
-<li>details</li>
-</ul>
+<li>publications on publications page</li>
+<li>projects on home page</li>
+<li>publications on cv</li>
+</ul></li>
+<li>functions for each page with:
+<ul>
+<li>the sections of manual vs auto-update content and their order</li>
+<li>how to sort the auto-update content</li>
+<li>applying the formatting and creating item lists using pmap or something like that</li>
+<li>(optional this could also be part of manual content) how to combine the auto-update content using headings</li>
+</ul></li>
+</ol>
 </section>
-</section>
-</section>
-<section id="publications" class="level2">
-<h2 class="anchored" data-anchor-id="publications">PUBLICATIONS</h2>
-<p><strong>Your name</strong>, Author (YYYY). <a href="https://doi.org">title</a>. <em>Journal.</em></p>
-<p>Author, <strong>Your name</strong>, Author (YYYY). <a href="https://doi.org">title</a>. <em>Journal.</em></p>
-</section>
-<section id="teaching-experience" class="level2">
-<h2 class="anchored" data-anchor-id="teaching-experience">TEACHING EXPERIENCE</h2>
-</section>
-<section id="presentations-and-posters" class="level2">
-<h2 class="anchored" data-anchor-id="presentations-and-posters">PRESENTATIONS AND POSTERS</h2>
-<section id="presentations" class="level3">
-<h3 class="anchored" data-anchor-id="presentations">PRESENTATIONS</h3>
-<section id="talk-name" class="level4">
-<h4 class="anchored" data-anchor-id="talk-name"><a href="https://github.com">Talk Name</a></h4>
-<p>Event/Conference, Location, Month YYYY</p>
-<p>Event/Conference, Location, Month YYYY</p>
-</section>
-<section id="talk-name-1" class="level4">
-<h4 class="anchored" data-anchor-id="talk-name-1">Talk Name</h4>
-<p>Event/Conference, Location, Month YYYY</p>
-</section>
-</section>
-<section id="posters" class="level3">
-<h3 class="anchored" data-anchor-id="posters">POSTERS</h3>
-<section id="poster-name" class="level4">
-<h4 class="anchored" data-anchor-id="poster-name"><a href="https://github.com">Poster Name</a></h4>
-<p>Event/Conference, Location, Month YYYY</p>
-</section>
-</section>
-</section>
-<section id="professional-service" class="level2">
-<h2 class="anchored" data-anchor-id="professional-service">PROFESSIONAL SERVICE</h2>
-<section id="institution" class="level3">
-<h3 class="anchored" data-anchor-id="institution">Institution</h3>
-<p>Role, Committee/Group, Month YYYY – Month YYYY</p>
-<p>Role, Committee/Group, Month YYYY – Month YYYY</p>
-</section>
-<section id="institutionnational-organization" class="level3">
-<h3 class="anchored" data-anchor-id="institutionnational-organization">Institution/National Organization</h3>
-<p>Role, Committee/Group, Month YYYY – Month YYYY</p>
-</section>
-<section id="reviewer" class="level3">
-<h3 class="anchored" data-anchor-id="reviewer">Reviewer</h3>
-<p>Journal</p>
-<p>HTML/PDF formatting option inspired by <a href="https://www.cynthiahqy.com/posts/cv-html-pdf/">this page</a>.</p>
+<section id="creating-pages" class="level2">
+<h2 class="anchored" data-anchor-id="creating-pages">creating pages</h2>
+<ol type="1">
+<li>read in content csv</li>
+<li>read in pages</li>
+<li>(optional in case forget to commit beforehand) save old pages as a backup</li>
+<li>run page functions</li>
+<li>save new pages</li>
+</ol>
 
 
 </section>

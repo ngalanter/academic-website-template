@@ -54,5 +54,8 @@
   },
   "teaching.qmd": {
     "teaching.html": "494d4b26"
+  },
+  "draft-auto-update-workflow.md": {
+    "draft-auto-update-workflow.html": "dff64357"
   }
 }

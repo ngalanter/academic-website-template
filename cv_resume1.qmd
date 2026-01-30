@@ -1,7 +1,8 @@
 ---
 title: Curriculum Vitae or Resume Format 1
 format:
-  html: default
+  html:
+    toc: true
   pdf:
     colorlinks: false
     mainfont: Open Sans
