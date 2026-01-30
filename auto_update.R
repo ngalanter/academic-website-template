@@ -20,6 +20,9 @@ link_f <- function(txt,link){ paste0("[",txt,"](",link,")")}
 
 paren <- function(txt){ paste0("(",txt,")") }
 
+#adds blank lines before, in between, and after vector entries
+empty_line_wrap <- function(txt){ c("",rbind(txt,rep("",length(txt)))) }
+
 # item helpers ------------------------------
 
 # ... at ends of functions so can apply to dataframe without selecting vars
@@ -48,7 +51,7 @@ cv <- function(old_cv,content){
   update_with <- content %>% filter(type == "Publication") %>% 
     arrange(desc(year)) %>% pmap(pub) %>% unlist()
   
-  update_with <- c("",rbind(update_with,rep("",length(update_with))))
+  update_with <- empty_line_wrap(update_with)
   
   parts[[2]] <- update_with
   
