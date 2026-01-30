@@ -57,5 +57,12 @@
   },
   "draft-auto-update-workflow.md": {
     "draft-auto-update-workflow.html": "dff64357"
+  },
+  "cv.qmd": {
+    "cv.html": "3f051003",
+    "cv.tex": "d7a0aec9"
+  },
+  "old_cv_backup.qmd": {
+    "old_cv_backup.html": "851ae81c"
   }
 }
