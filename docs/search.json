@@ -84,11 +84,32 @@
     "text": "Other Projects\n\nproject name\nproject description\n\n\nproject name\nproject description"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
+    "objectID": "old_index_backup.html",
+    "href": "old_index_backup.html",
     "title": "Name",
     "section": "",
     "text": "This is a template for a grad student or postdoc personal website built using quarto. I’m hopeful that it will be helpful for grad students at all levels, including those seeking industry positions, however as a postdoc I am more familiar with academic pages.\nBefore using this template, consider learning about quarto websites here: https://quarto.org/docs/websites.\nThis page uses the about page template, see details here: https://quarto.org/docs/websites/website-about.html. This page can be used to give an overview of yourself, and you can link externally and internally.\nThis template uses the zephyr theme, to change the theme or create a custom theme go to the _quarto.yml file. See here for more details about themes and see here for a previous of what the pre-made themes generally look like.\nA straightforward way to publish a website is via github pages, see here for a guide on publishing a quarto website via github pages: https://quarto.org/docs/publishing/github-pages.html.\nThis goal of this template is to provide several types of pages that might be relevant, but most personal websites don’t have all of these pages!\n\nNews\nPublished paper Paper 3 in Journal 3\nReleased preprint Paper 4\nExciting update here\nPresented poster Poster at Conference\nPublished paper Paper 2 in Journal 2"
+  },
+  {
+    "objectID": "more_about.html",
+    "href": "more_about.html",
+    "title": "More About Me",
+    "section": "",
+    "text": "this page could be used to talk more about your hobbies, background, family, etc. You could include photos as well."
+  },
+  {
+    "objectID": "cv_resume2.html",
+    "href": "cv_resume2.html",
+    "title": "Curriculum Vitae or Resume Format 2",
+    "section": "",
+    "text": "This is a quicker way to include an existing CV or resume on your website."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "More Musings\n\n\n\n\n\n\n\n\nJan 10, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nRandom Thought I had Today\n\n\n\n\n\n\n\n\nJan 1, 2026\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "cv_resume1.html",
@@ -140,151 +161,11 @@
     "text": "PROFESSIONAL SERVICE\n\nInstitution\nRole, Committee/Group, Month YYYY – Month YYYY\nRole, Committee/Group, Month YYYY – Month YYYY\n\n\nInstitution/National Organization\nRole, Committee/Group, Month YYYY – Month YYYY\n\n\nReviewer\nJournal\nHTML/PDF formatting option inspired by this page."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Name",
     "section": "",
-    "text": "About this site"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "More Musings\n\n\n\n\n\n\n\n\nJan 10, 2026\n\n\n\n\n\n\n\n\n\n\n\n\nRandom Thought I had Today\n\n\n\n\n\n\n\n\nJan 1, 2026\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "cv_resume2.html",
-    "href": "cv_resume2.html",
-    "title": "Curriculum Vitae or Resume Format 2",
-    "section": "",
-    "text": "This is a quicker way to include an existing CV or resume on your website."
-  },
-  {
-    "objectID": "more_about.html",
-    "href": "more_about.html",
-    "title": "More About Me",
-    "section": "",
-    "text": "this page could be used to talk more about your hobbies, background, family, etc. You could include photos as well."
-  },
-  {
-    "objectID": "posts/post1.html",
-    "href": "posts/post1.html",
-    "title": "Random Thought I had Today",
-    "section": "",
-    "text": "The quick brown fox jumps over the lazy dog"
-  },
-  {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Description of project and your contributions\n\n\nReport: Type of report or recipient, Month YYYY\nPresentation: Audience or event, Month YYYY\nCode\n\n\n\n\n\nDescription of project and your contributions\n\n\nReport: Type of report or recipient, Month YYYY\nPresentation: Audience or event, Month YYYY\nCode"
-  },
-  {
-    "objectID": "projects.html#nd-project-name",
-    "href": "projects.html#nd-project-name",
-    "title": "Projects",
-    "section": "",
-    "text": "Description of project and your contributions\n\n\nReport: Type of report or recipient, Month YYYY\nPresentation: Audience or event, Month YYYY\nCode"
-  },
-  {
-    "objectID": "reading_list.html",
-    "href": "reading_list.html",
-    "title": "Reading List",
-    "section": "",
-    "text": "A list books (no textbooks or research papers!) I’m currently reading and have read in the recent past.\n\nCurrently Reading\n\nBook name, author\n\n\n\nOn my List\n\nBook name, author\nBook name, author\n\n\n\nReading History\n\nBook name, author\nBook name, author"
-  },
-  {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research and Publications",
-    "section": "",
-    "text": "Description of Research Area"
-  },
-  {
-    "objectID": "research.html#research-area-two",
-    "href": "research.html#research-area-two",
-    "title": "Research and Publications",
-    "section": "Research Area Two",
-    "text": "Research Area Two\n\n\nDescription of Research Area\n\nPresentations and Code\nTalk Name (Date, Event name or location)\nRepository Name (Code purpose)\n\n\nPublications and Manuscripts\nYour name, Author (YYYY). title. Journal.\nYour name, Author (Preprint). title."
-  },
-  {
-    "objectID": "software.html",
-    "href": "software.html",
-    "title": "Software",
-    "section": "",
-    "text": "Below is a list of R (or whatever software is relevant) packages I have contributed to.\n\npackagename\nRole either in full words or cre,‘aut’,ctb, etc. R package standard roles listed here\nPackage descption and how to access it.\n\n\npackagename\nRole either in full words or cre,‘aut’,ctb, etc. R package standard roles listed here\nPackage descption and how to access it.\n\n\npackagename\nRole either in full words or cre,‘aut’,ctb, etc. R package standard roles listed here\nPackage descption and how to access it."
-  },
-  {
-    "objectID": "draft-auto-update-workflow.html",
-    "href": "draft-auto-update-workflow.html",
-    "title": "Preparing other site pages for auto update",
-    "section": "",
-    "text": "add blocks with strings seperating out the auto-update content from the manual page content\n\ncould use conditional content, like ::: {.content-hidden unless-format=\"markdown\"} index_news_auto  ::: then ::: {.content-hidden unless-format=\"markdown\"} end_index_news_auto  :::"
-  },
-  {
-    "objectID": "draft-auto-update-workflow.html#helper-functions-to-make-code-mode-interpretable-and-easier-to-modify",
-    "href": "draft-auto-update-workflow.html#helper-functions-to-make-code-mode-interpretable-and-easier-to-modify",
-    "title": "Preparing other site pages for auto update",
-    "section": "helper functions to make code mode interpretable and easier to modify",
-    "text": "helper functions to make code mode interpretable and easier to modify\n\nfunctions for basic formatting make sure they can be used in combination, examples:\n\nitalics\nbolding\nturning text into a headline\ncreating a link from two fields\n\nfunctions for formatting each type of item, examples:\n\npublications on publications page\nprojects on home page\npublications on cv\n\nfunctions for each page with:\n\nthe sections of manual vs auto-update content and their order\nhow to sort the auto-update content\napplying the formatting and creating item lists using pmap or something like that\n(optional this could also be part of manual content) how to combine the auto-update content using headings"
-  },
-  {
-    "objectID": "draft-auto-update-workflow.html#creating-pages",
-    "href": "draft-auto-update-workflow.html#creating-pages",
-    "title": "Preparing other site pages for auto update",
-    "section": "creating pages",
-    "text": "creating pages\n\nread in content csv\nread in pages\n(optional in case forget to commit beforehand) save old pages as a backup\nrun page functions\nsave new pages"
-  },
-  {
-    "objectID": "cv.html",
-    "href": "cv.html",
-    "title": "Curriculum Vitae or Resume Format 1",
-    "section": "",
-    "text": "Just as with a standard cv or resume, use whatever headings and format makes the most sense for you. These sections are just examples. See here for an overview of markdown formatting in quarto."
-  },
-  {
-    "objectID": "cv.html#education",
-    "href": "cv.html#education",
-    "title": "Curriculum Vitae or Resume Format 1",
-    "section": "EDUCATION",
-    "text": "EDUCATION\n\nInstition, Location\nDegree, Field, Graduation Month YYYY\nOther Details\n\n\nInstition, Location\nDegree, Field, Graduation Month YYYY\nOther Details"
-  },
-  {
-    "objectID": "cv.html#research-experience",
-    "href": "cv.html#research-experience",
-    "title": "Curriculum Vitae or Resume Format 1",
-    "section": "RESEARCH EXPERIENCE",
-    "text": "RESEARCH EXPERIENCE\n\nGRADUATE STUDENT RESEARCHER\n\nProject\nInstitution/Company, Month YYYY – Month YYYY\nSupervisor/Advisor/Mentor: Name (if this is relevant)\n\ndetails\n\n\n\nProject\nInstitution/Company, Month YYYY – Month YYYY\nSupervisor/Advisor/Mentor: Name (if this is relevant)\n\ndetails\n\n\n\n\nUNDERGRADUATE STUDENT RESEARCHER\n\nProject\nInstitution/Company, Month YYYY – Month YYYY\nSupervisor/Advisor/Mentor: Name (if this is relevant)\n\ndetails\n\n\n\nProject\nInstitution/Company, Month YYYY – Month YYYY\nSupervisor/Advisor/Mentor: Name (if this is relevant)\n\ndetails"
-  },
-  {
-    "objectID": "cv.html#publications",
-    "href": "cv.html#publications",
-    "title": "Curriculum Vitae or Resume Format 1",
-    "section": "PUBLICATIONS",
-    "text": "PUBLICATIONS\nLast, F.. (2026). Paper 3. Journal 3.\nLast, F., Author. (Preprint). Paper 4.\nAuthor, Last, F.. (2024). Paper 2. Journal 2.\nLast, F., Author. (2023). Paper 1. Journal 1."
-  },
-  {
-    "objectID": "cv.html#teaching-experience",
-    "href": "cv.html#teaching-experience",
-    "title": "Curriculum Vitae or Resume Format 1",
-    "section": "TEACHING EXPERIENCE",
-    "text": "TEACHING EXPERIENCE"
-  },
-  {
-    "objectID": "cv.html#presentations-and-posters",
-    "href": "cv.html#presentations-and-posters",
-    "title": "Curriculum Vitae or Resume Format 1",
-    "section": "PRESENTATIONS AND POSTERS",
-    "text": "PRESENTATIONS AND POSTERS\n\nPresentations\nTalk 2\nMeeting, Place, October 2025\n\nTalk 1\nConference, Place, May 2024\nSeminar, Place, March 2024\n\n\nPosters\nPoster\nConference, Place, July 2025"
-  },
-  {
-    "objectID": "cv.html#professional-service",
-    "href": "cv.html#professional-service",
-    "title": "Curriculum Vitae or Resume Format 1",
-    "section": "PROFESSIONAL SERVICE",
-    "text": "PROFESSIONAL SERVICE\n\nInstitution\nRole, Committee/Group, Month YYYY – Month YYYY\nRole, Committee/Group, Month YYYY – Month YYYY\n\n\nInstitution/National Organization\nRole, Committee/Group, Month YYYY – Month YYYY\n\n\nReviewer\nJournal\nHTML/PDF formatting option inspired by this page."
+    "text": "This is a template for a personal website created with grad students and postdocs in mind. However, others may find it a helpful template as well! We’re hopeful that it will be relevant to those seeking industry as well as academic positions and have created page options that we think are more industry-relevant, however we are more familiar with academic websites.\nThis template uses quarto, you can learn more about quarto websites here: https://quarto.org/docs/websites.\nThis page uses the about page template, see details here: https://quarto.org/docs/websites/website-about.html. This page can be used to give an overview of yourself, and you can link externally and internally.\nThis template uses the zephyr theme, to change the theme or create a custom theme go to the _quarto.yml file. See here for more details about themes and see here for a previous of what the pre-made themes generally look like.\nSee the repository readme for more information about using this template and publishing via quarto and github pages.\nThis goal of this template is to provide several types of pages that might be relevant, but most personal websites don’t have all of these pages!\n\nNews\nPublished paper Paper 3 in Journal 3\nReleased preprint Paper 4\nExciting update here\nPresented poster Poster at Conference\nPublished paper Paper 2 in Journal 2"
   },
   {
     "objectID": "old_cv_backup.html",
@@ -336,13 +217,6 @@
     "text": "PROFESSIONAL SERVICE\n\nInstitution\nRole, Committee/Group, Month YYYY – Month YYYY\nRole, Committee/Group, Month YYYY – Month YYYY\n\n\nInstitution/National Organization\nRole, Committee/Group, Month YYYY – Month YYYY\n\n\nReviewer\nJournal\nHTML/PDF formatting option inspired by this page."
   },
   {
-    "objectID": "old_index_backup.html",
-    "href": "old_index_backup.html",
-    "title": "Name",
-    "section": "",
-    "text": "This is a template for a grad student or postdoc personal website built using quarto. I’m hopeful that it will be helpful for grad students at all levels, including those seeking industry positions, however as a postdoc I am more familiar with academic pages.\nBefore using this template, consider learning about quarto websites here: https://quarto.org/docs/websites.\nThis page uses the about page template, see details here: https://quarto.org/docs/websites/website-about.html. This page can be used to give an overview of yourself, and you can link externally and internally.\nThis template uses the zephyr theme, to change the theme or create a custom theme go to the _quarto.yml file. See here for more details about themes and see here for a previous of what the pre-made themes generally look like.\nA straightforward way to publish a website is via github pages, see here for a guide on publishing a quarto website via github pages: https://quarto.org/docs/publishing/github-pages.html.\nThis goal of this template is to provide several types of pages that might be relevant, but most personal websites don’t have all of these pages!\n\nNews\nPublished paper Paper 3 in Journal 3\nReleased preprint Paper 4\nExciting update here\nPresented poster Poster at Conference\nPublished paper Paper 2 in Journal 2"
-  },
-  {
     "objectID": "old_publications_backup.html",
     "href": "old_publications_backup.html",
     "title": "Publications",
@@ -362,5 +236,54 @@
     "title": "Publications",
     "section": "Sorted by theme",
     "text": "Sorted by theme\n\nStatistical Methods\nLast, F., Author (Preprint). Paper 4.\nLast, F., Author (2023). Paper 1. Journal 1.\n\n\nPublic Health and Medicine\nAuthor, Last, F. (2024). Paper 2. Journal 2.\n\n\nOther\nLast, F. (2026). Paper 3. Journal 3."
+  },
+  {
+    "objectID": "posts/post1.html",
+    "href": "posts/post1.html",
+    "title": "Random Thought I had Today",
+    "section": "",
+    "text": "The quick brown fox jumps over the lazy dog"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Description of project and your contributions\n\n\nReport: Type of report or recipient, Month YYYY\nPresentation: Audience or event, Month YYYY\nCode\n\n\n\n\n\nDescription of project and your contributions\n\n\nReport: Type of report or recipient, Month YYYY\nPresentation: Audience or event, Month YYYY\nCode"
+  },
+  {
+    "objectID": "projects.html#nd-project-name",
+    "href": "projects.html#nd-project-name",
+    "title": "Projects",
+    "section": "",
+    "text": "Description of project and your contributions\n\n\nReport: Type of report or recipient, Month YYYY\nPresentation: Audience or event, Month YYYY\nCode"
+  },
+  {
+    "objectID": "reading_list.html",
+    "href": "reading_list.html",
+    "title": "Reading List",
+    "section": "",
+    "text": "A list books (no textbooks or research papers!) I’m currently reading and have read in the recent past.\n\nCurrently Reading\n\nBook name, author\n\n\n\nOn my List\n\nBook name, author\nBook name, author\n\n\n\nReading History\n\nBook name, author\nBook name, author"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research and Publications",
+    "section": "",
+    "text": "Description of Research Area"
+  },
+  {
+    "objectID": "research.html#research-area-two",
+    "href": "research.html#research-area-two",
+    "title": "Research and Publications",
+    "section": "Research Area Two",
+    "text": "Research Area Two\n\n\nDescription of Research Area\n\nPresentations and Code\nTalk Name (Date, Event name or location)\nRepository Name (Code purpose)\n\n\nPublications and Manuscripts\nYour name, Author (YYYY). title. Journal.\nYour name, Author (Preprint). title."
+  },
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
+    "section": "",
+    "text": "Below is a list of R (or whatever software is relevant) packages I have contributed to.\n\npackagename\nRole either in full words or cre,‘aut’,ctb, etc. R package standard roles listed here\nPackage descption and how to access it.\n\n\npackagename\nRole either in full words or cre,‘aut’,ctb, etc. R package standard roles listed here\nPackage descption and how to access it.\n\n\npackagename\nRole either in full words or cre,‘aut’,ctb, etc. R package standard roles listed here\nPackage descption and how to access it."
   }
 ]
