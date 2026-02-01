@@ -32,14 +32,14 @@
     "href": "publications.html#sorted-by-type",
     "title": "Publications",
     "section": "Sorted by type",
-    "text": "Sorted by type\n\nPreprints\nYour name, Author (Preprint). title.\n\n\nJournal Articles\nYour name, Author (YYYY). title. Journal.\nAuthor, Your name, Author (YYYY). title. Journal."
+    "text": "Sorted by type\n\nPreprints\nLast, F., Author (Preprint). Paper 4.\n\n\nJournal Articles\nLast, F. (2026). Paper 3. Journal 3.\nAuthor, Last, F. (2024). Paper 2. Journal 2.\nLast, F., Author (2023). Paper 1. Journal 1."
   },
   {
     "objectID": "publications.html#sorted-by-theme",
     "href": "publications.html#sorted-by-theme",
     "title": "Publications",
     "section": "Sorted by theme",
-    "text": "Sorted by theme\n\nStatistical Methods\nYour name, Author (Preprint). title.\nYour name, Author (YYYY). title. Journal.\n\n\nPublic Health and Medicine Applications\nAuthor, Your name, Author (YYYY). title. Journal.\n\n\nOther\nYour name, Author (YYYY). title. Journal."
+    "text": "Sorted by theme\n\nStatistical Methods\nLast, F., Author (Preprint). Paper 4.\nLast, F., Author (2023). Paper 1. Journal 1.\n\n\nPublic Health and Medicine\nAuthor, Last, F. (2024). Paper 2. Journal 2.\n\n\nOther\nLast, F. (2026). Paper 3. Journal 3."
   },
   {
     "objectID": "posts/post2.html",
@@ -116,7 +116,7 @@
     "href": "cv_resume1.html#publications",
     "title": "Curriculum Vitae or Resume Format 1",
     "section": "PUBLICATIONS",
-    "text": "PUBLICATIONS\nLast, F.. (2026). Paper 3. Journal 3.\nLast, F., Author. (Preprint). Paper 4.\nAuthor, Last, F.. (2024). Paper 2. Journal 2.\nLast, F., Author. (2023). Paper 1. Journal 1."
+    "text": "PUBLICATIONS\nLast, F. (2026). Paper 3. Journal 3.\nLast, F., Author (Preprint). Paper 4.\nAuthor, Last, F. (2024). Paper 2. Journal 2.\nLast, F., Author (2023). Paper 1. Journal 1."
   },
   {
     "objectID": "cv_resume1.html#teaching-experience",
@@ -312,7 +312,7 @@
     "href": "old_cv_backup.html#publications",
     "title": "Curriculum Vitae or Resume Format 1",
     "section": "PUBLICATIONS",
-    "text": "PUBLICATIONS\nLast, F.. (2026). Paper 3. Journal 3.\nLast, F., Author. (Preprint). Paper 4.\nAuthor, Last, F.. (2024). Paper 2. Journal 2.\nLast, F., Author. (2023). Paper 1. Journal 1."
+    "text": "PUBLICATIONS\nLast, F. (2026). Paper 3. Journal 3.\nLast, F., Author (Preprint). Paper 4.\nAuthor, Last, F. (2024). Paper 2. Journal 2.\nLast, F., Author (2023). Paper 1. Journal 1."
   },
   {
     "objectID": "old_cv_backup.html#teaching-experience",
@@ -354,13 +354,13 @@
     "href": "old_publications_backup.html#sorted-by-type",
     "title": "Publications",
     "section": "Sorted by type",
-    "text": "Sorted by type\n\nPreprints\nYour name, Author (Preprint). title.\n\n\nJournal Articles\nYour name, Author (YYYY). title. Journal.\nAuthor, Your name, Author (YYYY). title. Journal."
+    "text": "Sorted by type\n\nPreprints\nLast, F., Author (Preprint). Paper 4.\n\n\nJournal Articles\nLast, F. (2026). Paper 3. Journal 3.\nAuthor, Last, F. (2024). Paper 2. Journal 2.\nLast, F., Author (2023). Paper 1. Journal 1."
   },
   {
     "objectID": "old_publications_backup.html#sorted-by-theme",
     "href": "old_publications_backup.html#sorted-by-theme",
     "title": "Publications",
     "section": "Sorted by theme",
-    "text": "Sorted by theme\n\nStatistical Methods\nYour name, Author (Preprint). title.\nYour name, Author (YYYY). title. Journal.\n\n\nPublic Health and Medicine Applications\nAuthor, Your name, Author (YYYY). title. Journal.\n\n\nOther\nYour name, Author (YYYY). title. Journal."
+    "text": "Sorted by theme\n\nStatistical Methods\nLast, F., Author (Preprint). Paper 4.\nLast, F., Author (2023). Paper 1. Journal 1.\n\n\nPublic Health and Medicine\nAuthor, Last, F. (2024). Paper 2. Journal 2.\n\n\nOther\nLast, F. (2026). Paper 3. Journal 3."
   }
 ]

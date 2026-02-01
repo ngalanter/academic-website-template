@@ -89,13 +89,13 @@ Supervisor/Advisor/Mentor: Name (if this is relevant)
 cv_pub_update_start
 :::
 
-**Last, F.**. (2026). [Paper 3](https://doi.org). *Journal 3*.
+**Last, F.** (2026). [Paper 3](https://doi.org). *Journal 3*.
 
-**Last, F.**, Author. (Preprint). [Paper 4](https://arxiv.org/).
+**Last, F.**, Author (Preprint). [Paper 4](https://arxiv.org/).
 
-Author, **Last, F.**. (2024). [Paper 2](https://github.com). *Journal 2*.
+Author, **Last, F.** (2024). [Paper 2](https://github.com). *Journal 2*.
 
-**Last, F.**, Author. (2023). [Paper 1](https://www.wikipedia.org/). *Journal 1*.
+**Last, F.**, Author (2023). [Paper 1](https://www.wikipedia.org/). *Journal 1*.
 
 ::: {.content-hidden unless-format="markdown"}
 cv_pub_update_end

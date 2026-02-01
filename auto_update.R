@@ -61,11 +61,11 @@ pub <- function(authors,year,title,link=NA,journal,subtype,...){
   
   if(subtype == "Preprints"){
     
-    paste0(paste(bf_name(authors),paren("Preprint"),ftitle, sep = ". "),".")
+    paste0(bf_name(authors)," ",paren("Preprint"),". ",ftitle,".")
     
   }else{
-  
-    paste0(paste(bf_name(authors),paren(year),ftitle,it(journal), sep = ". "),".")
+    
+    paste0(bf_name(authors)," ",paren(year),". ",ftitle,". ",it(journal),".")
     
   }
 
@@ -194,42 +194,6 @@ index <- function(old_index,content){
 }
 
 
-#creates updated publications page
-# includes two different ways sorting papers just as examples
-#  for actual website use one or the other (or neither)
-publications <- function(old_publications,content){
-  
-  parts <- split_helper(old_publications,c("pubs_v1_update", "pubs_v2_update"))
-  
-  #helper to format each section
-  helper <- function(content){
-    content %>% pmap(pub) %>% unlist() %>% empty_line_wrap()
-  }
-  
-  #version 1
-  
-  pubs1_update <- section_helper(c("Preprints","Journal Articles"),
-                                content %>% 
-                                  filter(type == "Publications"),
-                                format_fun = helper)
-  
-  parts[[2]] <- pubs1_update
-  
-  #version 2
-  
-  #using a different field than subtype to choose sections so need to specify
-  pubs2_update <- section_helper(c("Statistical Methods",
-                                   "Public Health and Medicine",
-                                   "Other"),
-                                 content %>% 
-                                   filter(type == "Publications"),
-                                 format_fun = helper,
-                                 field = "theme")
-  
-  parts[[4]] <- pubs2_update
-  
-}
-
 
 #creates updated cv page
 cv <- function(old_cv,content){
@@ -273,7 +237,43 @@ cv <- function(old_cv,content){
   
 }
 
-
+#creates updated publications page
+# includes two different ways sorting papers just as examples
+#  for actual website use one or the other (or neither)
+publications <- function(old_publications,content){
+  
+  parts <- split_helper(old_publications,c("pubs_v1_update", "pubs_v2_update"))
+  
+  #helper to format each section
+  helper <- function(content){
+    content %>% pmap(pub) %>% unlist() %>% empty_line_wrap()
+  }
+  
+  #version 1
+  
+  pubs1_update <- section_helper(c("Preprints","Journal Articles"),
+                                 content %>% 
+                                   filter(type == "Publications"),
+                                 format_fun = helper)
+  
+  parts[[2]] <- pubs1_update
+  
+  #version 2
+  
+  #using a different field than subtype to choose sections so need to specify
+  pubs2_update <- section_helper(c("Statistical Methods",
+                                   "Public Health and Medicine",
+                                   "Other"),
+                                 content %>% 
+                                   filter(type == "Publications"),
+                                 format_fun = helper,
+                                 field = "theme")
+  
+  parts[[4]] <- pubs2_update
+  
+  return(do.call(c,parts))
+  
+}
 
 
 # run the update ------------------------------
@@ -309,7 +309,7 @@ old_publications <- readLines("publications.qmd")
 
 writeLines(old_publications,"old_publications_backup.qmd")
 
-new_publications <- cv(old_publications,content)
+new_publications <- publications(old_publications,content)
 
 writeLines(new_publications,"publications.qmd")
 
