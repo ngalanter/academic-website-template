@@ -20,8 +20,27 @@ link_f <- function(txt,link){ paste0("[",txt,"](",link,")")}
 
 paren <- function(txt){ paste0("(",txt,")") }
 
-#adds blank lines before, in between, and after vector entries
-empty_line_wrap <- function(txt){ c("",rbind(txt,rep("",length(txt)))) }
+#adds blank lines before, in between, and after entries
+empty_line_wrap <- function(txt){ 
+  
+  #for a vector add between every line
+  if(class(txt) == "character"){
+    
+  ret <- c("",rbind(txt,rep("",length(txt))))
+    
+  }else{#for a list add between entries
+    
+    ret <- lapply(txt,function(x) c(x,""))
+    
+    ret[[1]] <- c("",ret[[1]])
+  }
+  
+  return(ret)
+    
+}
+
+#turn text vector into a line block to preserve line breaks
+line_block <- function(txt) { paste("|",txt) } 
 
 # item helpers ------------------------------
 
@@ -31,29 +50,109 @@ pub <- function(authors,year,title,link=NA,journal,...){
   
   ftitle <- title
   
-  if(!is.na(link)){
+  if((!is.na(link) & link != '')){
     ftitle <- link_f(title,link)
   }
   
   paste0(paste(bf_name(authors),paren(year),ftitle,it(journal), sep = ". "),".")
+
+  }
+
+pres_instance <- function(year,month,location,event,...){
+  
+  paste0(event,", ",location,", ",month," ",year)
+
+}
+
+pres <- function(title,link=NA,dat,..){
+  
+  ftitle <- title
+  
+  instances <- dat %>% filter(title == ftitle)
+  
+  if((!is.na(link) & link != '')){
+    ftitle <- link_f(title,link)
+  }
+  
+  return(unlist(c(bf(ftitle), pmap(instances,pres_instance))))
+  
 }
 
 # page helpers ------------------------------
 
+split_helper <- function(old_page,break_strings){
+  
+  fun <- function(x){
+    
+    start_ind <- str_which(old_page,paste0(x,"_start"))
+    end_ind <- str_which(old_page,paste0(x,"_end"))
+    
+    c(start_ind+1,start_ind+2,end_ind-2,end_ind-1)
+      
+  }
+  
+  breaks <- c(1,sapply(break_strings,fun),length(old_page))
+  
+  sapply(seq(from =1,to = length(breaks),by = 2), 
+         function(x) old_page[breaks[x]:breaks[(x+1)]])
+  
+}
+
 cv <- function(old_cv,content){
   
-  parts <- list(old_cv[1:(str_which(old_cv,"cv_pub_update_start")+1)],
-                old_cv[(str_which(old_cv,"cv_pub_update_start")+2):
-                       (str_which(old_cv,"cv_pub_update_end")-2)],
-                old_cv[(str_which(old_cv,"cv_pub_update_end")-1):
-                         length(old_cv)])
+  parts <- split_helper(old_cv,c("cv_pub_update", "cv_pres_update"))
   
-  update_with <- content %>% filter(type == "Publication") %>% 
-    arrange(desc(year)) %>% pmap(pub) %>% unlist()
+  #updating publications
   
-  update_with <- empty_line_wrap(update_with)
+  pubs_update <- content %>% filter(type == "Publication") %>% 
+    arrange(desc(year)) %>% 
+    pmap(pub) %>% unlist() %>% empty_line_wrap()
   
-  parts[[2]] <- update_with
+  parts[[2]] <- pubs_update
+  
+  #updating presentations
+  
+  #talks
+  talks <- content %>% 
+    filter(type == "Presentation", subtype == "Presentation") %>%
+    arrange(desc(year),desc(num_month))
+  
+  unique_talks <- talks %>% 
+    select(title,link) %>% distinct()
+  
+  talks_update <- lapply(1:nrow(unique_talks),
+                        function(x) pres(unique_talks$title[x],
+                                         unique_talks$link[x],
+                                         talks)) %>% 
+    empty_line_wrap() %>% unlist()
+  
+  talks_update[2:(length(talks_update)-1)] <- 
+    line_block(talks_update[2:(length(talks_update)-1)]) 
+  
+  talks_update <- c(head("Presentations",3),talks_update)
+  
+  posters <- content %>% 
+    filter(type == "Presentation", subtype == "Poster") %>%
+    arrange(desc(year),desc(num_month))
+  
+  unique_posters <- posters %>% 
+    select(title,link) %>% distinct()
+  
+  
+  posters_update <- lapply(1:nrow(unique_posters),
+                         function(x) pres(unique_posters$title[x],
+                                          unique_posters$link[x],
+                                          posters)) %>% 
+    empty_line_wrap() %>% unlist()
+  
+  posters_update[2:(length(posters_update)-1)] <- 
+    line_block(posters_update[2:(length(posters_update)-1)]) 
+  
+  posters_update <- c(head("Posters",3),posters_update)
+  
+  pres_update <- c(talks_update,posters_update)
+  
+  parts[[4]] <- pres_update
   
   return(do.call(c,parts))
   
@@ -64,6 +163,8 @@ cv <- function(old_cv,content){
 # run the update ------------------------------
 
 content <- read.csv("sample_content.csv")
+
+content <- content %>% mutate(num_month = match(month,month.name))
 
 old_cv <- readLines("cv_resume1.qmd")
 

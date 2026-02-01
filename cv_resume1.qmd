@@ -101,6 +101,10 @@ cv_pub_update_end
 
 ## PRESENTATIONS AND POSTERS
 
+::: {.content-hidden unless-format="markdown"}
+cv_pres_update_start
+:::
+
 ### PRESENTATIONS
 
 #### [Talk Name](https://github.com) 
@@ -115,6 +119,10 @@ Event/Conference, Location, Month YYYY
 
 #### [Poster Name](https://github.com) 
 Event/Conference, Location, Month YYYY
+
+::: {.content-hidden unless-format="markdown"}
+cv_pres_update_end
+:::
 
 ## PROFESSIONAL SERVICE
 

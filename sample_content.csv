@@ -1,4 +1,8 @@
-type,authors,year,title,link,journal
-Publication,"Last, F., Author",2023,Paper 1,https://www.wikipedia.org/,Journal 1
-Publication,"Author, Last, F.",2024,Paper 2,https://github.com,Journal 2
-Publication,"Last, F.",2026,Paper 3,https://doi.org,Journal 3
+type,subtype,authors,year,title,link,journal,location,month,event
+Publication,,"Last, F., Author",2023,Paper 1,https://www.wikipedia.org/,Journal 1,,,
+Publication,,"Author, Last, F.",2024,Paper 2,https://github.com,Journal 2,,,
+Publication,,"Last, F.",2026,Paper 3,https://doi.org,Journal 3,,,
+Presentation,Presentation,,2024,Talk 1,https://www.wikipedia.org/,,Place,May,Conference
+Presentation,Presentation,,2024,Talk 1,https://www.wikipedia.org/,,Place,March,Seminar
+Presentation,Presentation,,2025,Talk 2,,,Place,October,Meeting
+Presentation,Poster,,2023,Poster,https://github.com,,Place,July,Conference

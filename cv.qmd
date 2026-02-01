@@ -103,20 +103,26 @@ cv_pub_update_end
 
 ## PRESENTATIONS AND POSTERS
 
-### PRESENTATIONS
+::: {.content-hidden unless-format="markdown"}
+cv_pres_update_start
+:::
+### Presentations
 
-#### [Talk Name](https://github.com) 
-Event/Conference, Location, Month YYYY
+| **Talk 2**
+| Meeting, Place, October 2025
+| 
+| **[Talk 1](https://www.wikipedia.org/)**
+| Conference, Place, May 2024
+| Seminar, Place, March 2024
 
-Event/Conference, Location, Month YYYY
+### Posters
 
-#### Talk Name
-Event/Conference, Location, Month YYYY
+| **[Poster](https://github.com)**
+| Conference, Place, July 2023
 
-### POSTERS
-
-#### [Poster Name](https://github.com) 
-Event/Conference, Location, Month YYYY
+::: {.content-hidden unless-format="markdown"}
+cv_pres_update_end
+:::
 
 ## PROFESSIONAL SERVICE
 
