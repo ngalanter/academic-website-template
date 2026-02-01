@@ -88,7 +88,7 @@
     "href": "index.html",
     "title": "Name",
     "section": "",
-    "text": "This is a template for a grad student or postdoc personal website built using quarto. I’m hopeful that it will be helpful for grad students at all levels, including those seeking industry positions, however as a postdoc I am more familiar with academic pages.\nBefore using this template, consider learning about quarto websites here: https://quarto.org/docs/websites.\nThis page uses the about page template, see details here: https://quarto.org/docs/websites/website-about.html. This page can be used to give an overview of yourself, and you can link externally and internally.\nThis template uses the zephyr theme, to change the theme or create a custom theme go to the _quarto.yml file. See here for more details about themes and see here for a previous of what the pre-made themes generally look like.\nA straightforward way to publish a website is via github pages, see here for a guide on publishing a quarto website via github pages: https://quarto.org/docs/publishing/github-pages.html.\nThis goal of this template is to provide several types of pages that might be relevant, but most personal websites don’t have all of these pages!"
+    "text": "This is a template for a grad student or postdoc personal website built using quarto. I’m hopeful that it will be helpful for grad students at all levels, including those seeking industry positions, however as a postdoc I am more familiar with academic pages.\nBefore using this template, consider learning about quarto websites here: https://quarto.org/docs/websites.\nThis page uses the about page template, see details here: https://quarto.org/docs/websites/website-about.html. This page can be used to give an overview of yourself, and you can link externally and internally.\nThis template uses the zephyr theme, to change the theme or create a custom theme go to the _quarto.yml file. See here for more details about themes and see here for a previous of what the pre-made themes generally look like.\nA straightforward way to publish a website is via github pages, see here for a guide on publishing a quarto website via github pages: https://quarto.org/docs/publishing/github-pages.html.\nThis goal of this template is to provide several types of pages that might be relevant, but most personal websites don’t have all of these pages!\n\nNews\nPublished paper Paper 3 in Journal 3\nReleased preprint Paper 4\nExciting update here\nPresented poster Poster at Conference\nPublished paper Paper 2 in Journal 2"
   },
   {
     "objectID": "cv_resume1.html",
@@ -116,7 +116,7 @@
     "href": "cv_resume1.html#publications",
     "title": "Curriculum Vitae or Resume Format 1",
     "section": "PUBLICATIONS",
-    "text": "PUBLICATIONS\nYour name, Author. (YYYY). title. Journal.\nAuthor, Your name, Author. (YYYY). title. Journal."
+    "text": "PUBLICATIONS\nLast, F.. (2026). Paper 3. Journal 3.\nLast, F., Author. (Preprint). Paper 4.\nAuthor, Last, F.. (2024). Paper 2. Journal 2.\nLast, F., Author. (2023). Paper 1. Journal 1."
   },
   {
     "objectID": "cv_resume1.html#teaching-experience",
@@ -130,7 +130,7 @@
     "href": "cv_resume1.html#presentations-and-posters",
     "title": "Curriculum Vitae or Resume Format 1",
     "section": "PRESENTATIONS AND POSTERS",
-    "text": "PRESENTATIONS AND POSTERS\n\nPRESENTATIONS\n\nTalk Name\nEvent/Conference, Location, Month YYYY\nEvent/Conference, Location, Month YYYY\n\n\nTalk Name\nEvent/Conference, Location, Month YYYY\n\n\n\nPOSTERS\n\nPoster Name\nEvent/Conference, Location, Month YYYY"
+    "text": "PRESENTATIONS AND POSTERS\n\nPresentations\nTalk 2\nMeeting, Place, October 2025\n\nTalk 1\nConference, Place, May 2024\nSeminar, Place, March 2024\n\n\nPosters\nPoster\nConference, Place, July 2025"
   },
   {
     "objectID": "cv_resume1.html#professional-service",
@@ -263,7 +263,7 @@
     "href": "cv.html#publications",
     "title": "Curriculum Vitae or Resume Format 1",
     "section": "PUBLICATIONS",
-    "text": "PUBLICATIONS\nLast, F.. (2026). Paper 3. Journal 3.\nAuthor, Last, F.. (2024). Paper 2. Journal 2.\nLast, F., Author. (2023). Paper 1. Journal 1."
+    "text": "PUBLICATIONS\nLast, F.. (2026). Paper 3. Journal 3.\nLast, F., Author. (Preprint). Paper 4.\nAuthor, Last, F.. (2024). Paper 2. Journal 2.\nLast, F., Author. (2023). Paper 1. Journal 1."
   },
   {
     "objectID": "cv.html#teaching-experience",
@@ -277,7 +277,7 @@
     "href": "cv.html#presentations-and-posters",
     "title": "Curriculum Vitae or Resume Format 1",
     "section": "PRESENTATIONS AND POSTERS",
-    "text": "PRESENTATIONS AND POSTERS\n\nPresentations\nTalk 2\nMeeting, Place, October 2025\n\nTalk 1\nConference, Place, May 2024\nSeminar, Place, March 2024\n\n\nPosters\nPoster\nConference, Place, July 2023"
+    "text": "PRESENTATIONS AND POSTERS\n\nPresentations\nTalk 2\nMeeting, Place, October 2025\n\nTalk 1\nConference, Place, May 2024\nSeminar, Place, March 2024\n\n\nPosters\nPoster\nConference, Place, July 2025"
   },
   {
     "objectID": "cv.html#professional-service",
@@ -334,5 +334,12 @@
     "title": "Curriculum Vitae or Resume Format 1",
     "section": "PROFESSIONAL SERVICE",
     "text": "PROFESSIONAL SERVICE\n\nInstitution\nRole, Committee/Group, Month YYYY – Month YYYY\nRole, Committee/Group, Month YYYY – Month YYYY\n\n\nInstitution/National Organization\nRole, Committee/Group, Month YYYY – Month YYYY\n\n\nReviewer\nJournal\nHTML/PDF formatting option inspired by this page."
+  },
+  {
+    "objectID": "old_index_backup.html",
+    "href": "old_index_backup.html",
+    "title": "Name",
+    "section": "",
+    "text": "This is a template for a grad student or postdoc personal website built using quarto. I’m hopeful that it will be helpful for grad students at all levels, including those seeking industry positions, however as a postdoc I am more familiar with academic pages.\nBefore using this template, consider learning about quarto websites here: https://quarto.org/docs/websites.\nThis page uses the about page template, see details here: https://quarto.org/docs/websites/website-about.html. This page can be used to give an overview of yourself, and you can link externally and internally.\nThis template uses the zephyr theme, to change the theme or create a custom theme go to the _quarto.yml file. See here for more details about themes and see here for a previous of what the pre-made themes generally look like.\nA straightforward way to publish a website is via github pages, see here for a guide on publishing a quarto website via github pages: https://quarto.org/docs/publishing/github-pages.html.\nThis goal of this template is to provide several types of pages that might be relevant, but most personal websites don’t have all of these pages!\n\nNews\nPublished paper Paper 3 in Journal 3\nReleased preprint Paper 4\nExciting update here\nPresented poster Poster at Conference\nPublished paper Paper 2 in Journal 2"
   }
 ]

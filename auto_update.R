@@ -21,6 +21,7 @@ link_f <- function(txt,link){ paste0("[",txt,"](",link,")")}
 paren <- function(txt){ paste0("(",txt,")") }
 
 #adds blank lines before, in between, and after entries
+# txt can be a list (multi-line entries) or a vector (one-line entries)
 empty_line_wrap <- function(txt){ 
   
   #for a vector add between every line
@@ -42,11 +43,14 @@ empty_line_wrap <- function(txt){
 #turn text vector into a line block to preserve line breaks
 line_block <- function(txt) { paste("|",txt) } 
 
+#turn text vector into a list
+list_f <- function(txt) { paste("-",txt) } 
+
 # item helpers ------------------------------
 
 # ... at ends of functions so can apply to dataframe without selecting vars
 
-pub <- function(authors,year,title,link=NA,journal,...){
+pub <- function(authors,year,title,link=NA,journal,subtype,...){
   
   ftitle <- title
   
@@ -54,16 +58,27 @@ pub <- function(authors,year,title,link=NA,journal,...){
     ftitle <- link_f(title,link)
   }
   
-  paste0(paste(bf_name(authors),paren(year),ftitle,it(journal), sep = ". "),".")
+  if(subtype == "Preprint"){
+    
+    paste0(paste(bf_name(authors),paren("Preprint"),ftitle, sep = ". "),".")
+    
+  }else{
+  
+    paste0(paste(bf_name(authors),paren(year),ftitle,it(journal), sep = ". "),".")
+    
+  }
 
   }
 
+#helper to format specific occassion a presentation/poster was presented
 pres_instance <- function(year,month,location,event,...){
   
   paste0(event,", ",location,", ",month," ",year)
 
 }
 
+#formatting for an overall unique presentation/poster
+# there can be one or more confrences/events at which it was presented
 pres <- function(title,link=NA,dat,..){
   
   ftitle <- title
@@ -78,8 +93,55 @@ pres <- function(title,link=NA,dat,..){
   
 }
 
+#formatting for entry on the news section of the index page
+news_item <- function(type,subtype,title,link = NA,journal,event,...){
+  
+  ftitle <- title
+  
+  if((!is.na(link) & link != '')){
+    ftitle <- link_f(title,link)
+  }
+  
+  if(type == "Publication"){
+    
+    if(subtype == "Preprint"){
+      
+      ret <- paste("Released preprint ",bf(ftitle))
+      
+    } else{
+      
+      ret <- paste("Published paper",bf(ftitle),
+                   "in",journal)
+      
+    }
+    
+  } else if(type == "Presentation"){
+    
+    if(subtype == "Presentation"){
+      
+      ret <- paste("Gave talk",bf(ftitle),"at",event)
+      
+    } else if(subtype == "Poster"){
+      
+      ret <- paste("Presented poster",bf(ftitle),"at",event)
+      
+    }
+    #if have an entry that should only go in news, type is "other News"
+    #   and title is the desired news text
+  } else if(type == "Other News"){
+    
+    ret <- ftitle
+  }
+  
+  return(ret)
+  
+}
+
 # page helpers ------------------------------
 
+#splits pages into update and non-update components
+#  depends on the section break formatting being very specific
+#    for example no lines between ":::"'s and the break string
 split_helper <- function(old_page,break_strings){
   
   fun <- function(x){
@@ -98,6 +160,7 @@ split_helper <- function(old_page,break_strings){
   
 }
 
+#creates updated cv page
 cv <- function(old_cv,content){
   
   parts <- split_helper(old_cv,c("cv_pub_update", "cv_pres_update"))
@@ -158,18 +221,46 @@ cv <- function(old_cv,content){
   
 }
 
+#creates updated homepage
+index <- function(old_index,content){
+  
+  parts <- split_helper(old_index,c("news_update"))
+  
+  news_update <- content %>% filter(skip_in_news != "Yes") %>%
+    arrange(desc(year),desc(num_month)) %>%
+    #including 5 updates mostly to illustrate, could include less
+    slice_head(n = 5) %>% pmap(news_item) %>% 
+    unlist() %>% empty_line_wrap()
+  
+  parts[[2]] <- news_update
+  
+  return(do.call(c,parts))
+}
+
 
 
 # run the update ------------------------------
 
 content <- read.csv("sample_content.csv")
 
-content <- content %>% mutate(num_month = match(month,month.name))
+content <- content %>% 
+  mutate(num_month = match(month,month.name),
+         num_month = if_else(is.na(num_month),12,num_month))
 
+#updating cv
 old_cv <- readLines("cv_resume1.qmd")
 
 writeLines(old_cv,"old_cv_backup.qmd")
 
 new_cv <- cv(old_cv,content)
 
-writeLines(new_cv,"cv.qmd")
+writeLines(new_cv,"cv_resume1.qmd")
+
+#updating news section of index
+old_index <- readLines("index.qmd")
+
+writeLines(old_index,"old_index_backup.qmd")
+
+new_index <- index(old_index,content)
+
+writeLines(new_index,"index.qmd")

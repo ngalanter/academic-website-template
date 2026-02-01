@@ -89,9 +89,13 @@ Supervisor/Advisor/Mentor: Name (if this is relevant)
 cv_pub_update_start
 :::
 
-**Your name**, Author. (YYYY). [title](https://doi.org). *Journal.*
+**Last, F.**. (2026). [Paper 3](https://doi.org). *Journal 3*.
 
-Author, **Your name**, Author. (YYYY). [title](https://doi.org). *Journal.*
+**Last, F.**, Author. (Preprint). [Paper 4](https://arxiv.org/).
+
+Author, **Last, F.**. (2024). [Paper 2](https://github.com). *Journal 2*.
+
+**Last, F.**, Author. (2023). [Paper 1](https://www.wikipedia.org/). *Journal 1*.
 
 ::: {.content-hidden unless-format="markdown"}
 cv_pub_update_end
@@ -104,21 +108,19 @@ cv_pub_update_end
 ::: {.content-hidden unless-format="markdown"}
 cv_pres_update_start
 :::
+### Presentations
 
-### PRESENTATIONS
+| **Talk 2**
+| Meeting, Place, October 2025
+| 
+| **[Talk 1](https://www.wikipedia.org/)**
+| Conference, Place, May 2024
+| Seminar, Place, March 2024
 
-#### [Talk Name](https://github.com) 
-Event/Conference, Location, Month YYYY
+### Posters
 
-Event/Conference, Location, Month YYYY
-
-#### Talk Name
-Event/Conference, Location, Month YYYY
-
-### POSTERS
-
-#### [Poster Name](https://github.com) 
-Event/Conference, Location, Month YYYY
+| **[Poster](https://github.com)**
+| Conference, Place, July 2025
 
 ::: {.content-hidden unless-format="markdown"}
 cv_pres_update_end
