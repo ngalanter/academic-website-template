@@ -50,6 +50,7 @@ list_f <- function(txt) { paste("-",txt) }
 
 # ... at ends of functions so can apply to dataframe without selecting vars
 
+#publication formatting
 pub <- function(authors,year,title,link=NA,journal,subtype,...){
   
   ftitle <- title
@@ -58,7 +59,7 @@ pub <- function(authors,year,title,link=NA,journal,subtype,...){
     ftitle <- link_f(title,link)
   }
   
-  if(subtype == "Preprint"){
+  if(subtype == "Preprints"){
     
     paste0(paste(bf_name(authors),paren("Preprint"),ftitle, sep = ". "),".")
     
@@ -102,9 +103,9 @@ news_item <- function(type,subtype,title,link = NA,journal,event,...){
     ftitle <- link_f(title,link)
   }
   
-  if(type == "Publication"){
+  if(type == "Publications"){
     
-    if(subtype == "Preprint"){
+    if(subtype == "Preprints"){
       
       ret <- paste("Released preprint ",bf(ftitle))
       
@@ -115,13 +116,13 @@ news_item <- function(type,subtype,title,link = NA,journal,event,...){
       
     }
     
-  } else if(type == "Presentation"){
+  } else if(type == "Presentations and Posters"){
     
-    if(subtype == "Presentation"){
+    if(subtype == "Presentations"){
       
       ret <- paste("Gave talk",bf(ftitle),"at",event)
       
-    } else if(subtype == "Poster"){
+    } else if(subtype == "Posters"){
       
       ret <- paste("Presented poster",bf(ftitle),"at",event)
       
@@ -160,64 +161,20 @@ split_helper <- function(old_page,break_strings){
   
 }
 
-#creates updated cv page
-cv <- function(old_cv,content){
+#helper to format content as a sequence of sections
+#inputs:
+#   headings - string vector of sections in order they should appear
+#   content - dataframe of the specific content for all the sections
+#   format_fun - function that formats each section
+#   field - field to look for sections in, if not subtype
+#   header_level - numeric between 1 and 5, level of section header
+section_helper <- function(headings,content,format_fun,
+                           field = "subtype",header_level = 3){
   
-  parts <- split_helper(old_cv,c("cv_pub_update", "cv_pres_update"))
-  
-  #updating publications
-  
-  pubs_update <- content %>% filter(type == "Publication") %>% 
-    arrange(desc(year)) %>% 
-    pmap(pub) %>% unlist() %>% empty_line_wrap()
-  
-  parts[[2]] <- pubs_update
-  
-  #updating presentations
-  
-  #talks
-  talks <- content %>% 
-    filter(type == "Presentation", subtype == "Presentation") %>%
-    arrange(desc(year),desc(num_month))
-  
-  unique_talks <- talks %>% 
-    select(title,link) %>% distinct()
-  
-  talks_update <- lapply(1:nrow(unique_talks),
-                        function(x) pres(unique_talks$title[x],
-                                         unique_talks$link[x],
-                                         talks)) %>% 
-    empty_line_wrap() %>% unlist()
-  
-  talks_update[2:(length(talks_update)-1)] <- 
-    line_block(talks_update[2:(length(talks_update)-1)]) 
-  
-  talks_update <- c(head("Presentations",3),talks_update)
-  
-  posters <- content %>% 
-    filter(type == "Presentation", subtype == "Poster") %>%
-    arrange(desc(year),desc(num_month))
-  
-  unique_posters <- posters %>% 
-    select(title,link) %>% distinct()
-  
-  
-  posters_update <- lapply(1:nrow(unique_posters),
-                         function(x) pres(unique_posters$title[x],
-                                          unique_posters$link[x],
-                                          posters)) %>% 
-    empty_line_wrap() %>% unlist()
-  
-  posters_update[2:(length(posters_update)-1)] <- 
-    line_block(posters_update[2:(length(posters_update)-1)]) 
-  
-  posters_update <- c(head("Posters",3),posters_update)
-  
-  pres_update <- c(talks_update,posters_update)
-  
-  parts[[4]] <- pres_update
-  
-  return(do.call(c,parts))
+  lapply(headings, function(x) content %>% 
+           filter(get(field) == x) %>% format_fun() %>%
+           c(head(x,header_level),.)) %>% 
+    unlist() %>% c()
   
 }
 
@@ -227,7 +184,6 @@ index <- function(old_index,content){
   parts <- split_helper(old_index,c("news_update"))
   
   news_update <- content %>% filter(skip_in_news != "Yes") %>%
-    arrange(desc(year),desc(num_month)) %>%
     #including 5 updates mostly to illustrate, could include less
     slice_head(n = 5) %>% pmap(news_item) %>% 
     unlist() %>% empty_line_wrap()
@@ -238,14 +194,106 @@ index <- function(old_index,content){
 }
 
 
+#creates updated publications page
+# includes two different ways sorting papers just as examples
+#  for actual website use one or the other (or neither)
+publications <- function(old_publications,content){
+  
+  parts <- split_helper(old_publications,c("pubs_v1_update", "pubs_v2_update"))
+  
+  #helper to format each section
+  helper <- function(content){
+    content %>% pmap(pub) %>% unlist() %>% empty_line_wrap()
+  }
+  
+  #version 1
+  
+  pubs1_update <- section_helper(c("Preprints","Journal Articles"),
+                                content %>% 
+                                  filter(type == "Publications"),
+                                format_fun = helper)
+  
+  parts[[2]] <- pubs1_update
+  
+  #version 2
+  
+  #using a different field than subtype to choose sections so need to specify
+  pubs2_update <- section_helper(c("Statistical Methods",
+                                   "Public Health and Medicine",
+                                   "Other"),
+                                 content %>% 
+                                   filter(type == "Publications"),
+                                 format_fun = helper,
+                                 field = "theme")
+  
+  parts[[4]] <- pubs2_update
+  
+}
+
+
+#creates updated cv page
+cv <- function(old_cv,content){
+  
+  parts <- split_helper(old_cv,c("cv_pub_update", "cv_pres_update"))
+  
+  #updating publications
+  
+  pubs_update <- content %>% filter(type == "Publications") %>% 
+    pmap(pub) %>% unlist() %>% empty_line_wrap()
+  
+  parts[[2]] <- pubs_update
+  
+  #updating presentations and posters
+  #helper to update each presentation/poster section
+  helper <- function(content){
+    
+    unique_items <- content %>% 
+      select(title,link) %>% distinct()
+    
+    formatted <- lapply(1:nrow(unique_items),
+                           function(x) pres(unique_items$title[x],
+                                            unique_items$link[x],
+                                            content)) %>% 
+      empty_line_wrap() %>% unlist()
+    
+    formatted[2:(length(formatted)-1)] <- 
+      line_block(formatted[2:(length(formatted)-1)]) 
+    
+    return(formatted)
+    
+  }
+  
+  pres_update <- section_helper(c("Presentations","Posters"),
+                                content %>% filter(type == "Presentations and Posters"),
+                                format_fun = helper)
+  
+  parts[[4]] <- pres_update
+  
+  return(do.call(c,parts))
+  
+}
+
+
+
 
 # run the update ------------------------------
 
 content <- read.csv("sample_content.csv")
 
+#when no month listed, eg for a paper, putting as end of year by default
 content <- content %>% 
   mutate(num_month = match(month,month.name),
-         num_month = if_else(is.na(num_month),12,num_month))
+         num_month = if_else(is.na(num_month),12,num_month)) %>%
+  arrange(desc(year),desc(num_month))
+
+#updating news section of index
+old_index <- readLines("index.qmd")
+
+writeLines(old_index,"old_index_backup.qmd")
+
+new_index <- index(old_index,content)
+
+writeLines(new_index,"index.qmd")
 
 #updating cv
 old_cv <- readLines("cv_resume1.qmd")
@@ -256,11 +304,13 @@ new_cv <- cv(old_cv,content)
 
 writeLines(new_cv,"cv_resume1.qmd")
 
-#updating news section of index
-old_index <- readLines("index.qmd")
+#updating publications
+old_publications <- readLines("publications.qmd")
 
-writeLines(old_index,"old_index_backup.qmd")
+writeLines(old_publications,"old_publications_backup.qmd")
 
-new_index <- index(old_index,content)
+new_publications <- cv(old_publications,content)
 
-writeLines(new_index,"index.qmd")
+writeLines(new_publications,"publications.qmd")
+
+

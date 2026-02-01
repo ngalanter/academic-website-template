@@ -30,8 +30,6 @@ website:
              text: Option 2
           -  href: https://cdn.uconnectlabs.com/wp-content/uploads/sites/25/2021/07/Andrew-Peters.pdf
              text: Option 3
-          -  href: cv.qmd
-             text: Update Test
       - href: resources.qmd
         text: Resources
       - text: Informal Pages
