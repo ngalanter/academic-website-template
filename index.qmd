@@ -35,7 +35,7 @@ This template uses quarto, you can learn more about quarto websites here: <https
 
 This page uses the about page template, see details here: <https://quarto.org/docs/websites/website-about.html>. This page can be used to give an overview of yourself, and you can link [externally](https://quarto.org/docs/websites) and [internally](teaching.qmd).
 
-This template uses the `zephyr` theme, to change the theme or create a custom theme go to the `_quarto.yml` file. See [here](https://quarto.org/docs/output-formats/html-themes.html) for more details about themes and see [here](https://bootswatch.com/) for a previous of what the pre-made themes generally look like.
+This template uses the `minty` theme with slight color customization, to change the theme or create a custom theme go to the `_quarto.yml` file. See [here](https://quarto.org/docs/output-formats/html-themes.html) for more details about themes and see [here](https://bootswatch.com/) for a previous of what the pre-made themes generally look like.
 
 See the repository readme for more information about using this template and publishing via quarto and github pages.
 

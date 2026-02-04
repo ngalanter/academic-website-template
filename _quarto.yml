@@ -45,10 +45,8 @@ website:
 
 format:
   html:
-    theme: zephyr
+    theme: [minty, custom.scss]
     css: styles.css
     toc: false
-    nav-tabs-link-active-bg:
-    
 
 editor: source

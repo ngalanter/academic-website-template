@@ -165,7 +165,7 @@
     "href": "index.html",
     "title": "Name",
     "section": "",
-    "text": "This is a template for a personal website created with grad students and postdocs in mind. However, others may find it a helpful template as well! We’re hopeful that it will be relevant to those seeking industry as well as academic positions and have created page options that we think are more industry-relevant, however we are more familiar with academic websites.\nThis template uses quarto, you can learn more about quarto websites here: https://quarto.org/docs/websites.\nThis page uses the about page template, see details here: https://quarto.org/docs/websites/website-about.html. This page can be used to give an overview of yourself, and you can link externally and internally.\nThis template uses the zephyr theme, to change the theme or create a custom theme go to the _quarto.yml file. See here for more details about themes and see here for a previous of what the pre-made themes generally look like.\nSee the repository readme for more information about using this template and publishing via quarto and github pages.\nThis goal of this template is to provide several types of pages that might be relevant, but most personal websites don’t have all of these pages!\n\nNews\nPublished paper Paper 3 in Journal 3\nReleased preprint Paper 4\nExciting update here\nPresented poster Poster at Conference\nPublished paper Paper 2 in Journal 2"
+    "text": "This is a template for a personal website created with grad students and postdocs in mind. However, others may find it a helpful template as well! We’re hopeful that it will be relevant to those seeking industry as well as academic positions and have created page options that we think are more industry-relevant, however we are more familiar with academic websites.\nThis template uses quarto, you can learn more about quarto websites here: https://quarto.org/docs/websites.\nThis page uses the about page template, see details here: https://quarto.org/docs/websites/website-about.html. This page can be used to give an overview of yourself, and you can link externally and internally.\nThis template uses the minty theme with slight color customization, to change the theme or create a custom theme go to the _quarto.yml file. See here for more details about themes and see here for a previous of what the pre-made themes generally look like.\nSee the repository readme for more information about using this template and publishing via quarto and github pages.\nThis goal of this template is to provide several types of pages that might be relevant, but most personal websites don’t have all of these pages!\n\nNews\nPublished paper Paper 3 in Journal 3\nReleased preprint Paper 4\nExciting update here\nPresented poster Poster at Conference\nPublished paper Paper 2 in Journal 2"
   },
   {
     "objectID": "old_cv_backup.html",
@@ -249,7 +249,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Description of project and your contributions\n\n\nReport: Type of report or recipient, Month YYYY\nPresentation: Audience or event, Month YYYY\nCode\n\n\n\n\n\nDescription of project and your contributions\n\n\nReport: Type of report or recipient, Month YYYY\nPresentation: Audience or event, Month YYYY\nCode"
+    "text": "Description of project and your contributions\n\n\nReport: Type of report or recipient, Month YYYY\nPresentation: Audience or event, Month YYYY\nCode\n\n\n\n\nDescription of project and your contributions\n\n\nReport: Type of report or recipient, Month YYYY\nPresentation: Audience or event, Month YYYY\nCode"
   },
   {
     "objectID": "projects.html#nd-project-name",
@@ -277,7 +277,7 @@
     "href": "research.html#research-area-two",
     "title": "Research and Publications",
     "section": "Research Area Two",
-    "text": "Research Area Two\n\n\nDescription of Research Area\n\nPresentations and Code\nTalk Name (Date, Event name or location)\nRepository Name (Code purpose)\n\n\nPublications and Manuscripts\nYour name, Author (YYYY). title. Journal.\nYour name, Author (Preprint). title."
+    "text": "Research Area Two\n\nDescription of Research Area\n\nPresentations and Code\nTalk Name (Date, Event name or location)\nRepository Name (Code purpose)\n\n\nPublications and Manuscripts\nYour name, Author (YYYY). title. Journal.\nYour name, Author (Preprint). title."
   },
   {
     "objectID": "software.html",
