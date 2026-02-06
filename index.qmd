@@ -29,7 +29,7 @@ about:
      
 ---
 
-This is a template for a personal website created with grad students and postdocs in mind. However, others may find it a helpful template as well! We're hopeful that it will be relevant to those seeking industry as well as academic positions and have created page options that we think are more industry-relevant, however we are more familiar with academic websites.
+This is a template for an academic personal website. It was created with grad students and postdocs in mind, however, others may find it a helpful template as well! We're hopeful that it will be relevant to those seeking industry as well as academic positions and have created page options that we think are more industry-relevant, however we are more familiar with academic websites. The github repository is <https://github.com/ngalanter/academic-website-template>.
 
 This template uses quarto, you can learn more about quarto websites here: <https://quarto.org/docs/websites>.
 
