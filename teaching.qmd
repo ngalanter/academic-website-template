@@ -16,15 +16,15 @@ title: Teaching
 
 **Institution**
 
-- (Membeer/Facilitator/Chair/Orgnaizer/etc) of (Committee or Group) YYYY-YY through YYYY-YY
+- (Member/Facilitator/Chair/Organizer/etc) of (Committee or Group) YYYY-YY through YYYY-YY
 
-- (Membeer/Facilitator/Chair/Orgnaizer/etc) of (Committee or Group) YYYY-YY and YYYY-YY
+- (Member/Facilitator/Chair/Organizer/etc) of (Committee or Group) YYYY-YY and YYYY-YY
 
-- (Membeer/Facilitator/Chair/Orgnaizer/etc) of (Committee or Group) YYYY-YY
+- (Member/Facilitator/Chair/Organizer/etc) of (Committee or Group) YYYY-YY
 
 **Institution**
 
-- (Membeer/Facilitator/Chair/Orgnaizer/etc) of (Committee or Group) YYYY-YY
+- (Member/Facilitator/Chair/Organizer/etc) of (Committee or Group) YYYY-YY
 
 ### Other
 

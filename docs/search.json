@@ -4,7 +4,7 @@
     "href": "teaching.html",
     "title": "Teaching",
     "section": "",
-    "text": "Instructor\nCourse Name, Institution, Fall/Spring/Winter/Summer YYYY, Course materials\n\n\nTeaching Assistant\nCourse Name, Institution, Fall/Spring/Winter/Summer YYYY\nCourse Name, Institution, Fall/Spring/Winter/Summer YYYY\n\n\nTeaching Related Service\nInstitution\n\n(Membeer/Facilitator/Chair/Orgnaizer/etc) of (Committee or Group) YYYY-YY through YYYY-YY\n(Membeer/Facilitator/Chair/Orgnaizer/etc) of (Committee or Group) YYYY-YY and YYYY-YY\n(Membeer/Facilitator/Chair/Orgnaizer/etc) of (Committee or Group) YYYY-YY\n\nInstitution\n\n(Membeer/Facilitator/Chair/Orgnaizer/etc) of (Committee or Group) YYYY-YY\n\n\n\nOther\nCourse name, Institution, Fall/Spring/Winter/Summer, Grader/Tutor/etc\nCourse name, Institution, Fall/Spring/Winter/Summer, Grader/Tutor/etc"
+    "text": "Instructor\nCourse Name, Institution, Fall/Spring/Winter/Summer YYYY, Course materials\n\n\nTeaching Assistant\nCourse Name, Institution, Fall/Spring/Winter/Summer YYYY\nCourse Name, Institution, Fall/Spring/Winter/Summer YYYY\n\n\nTeaching Related Service\nInstitution\n\n(Member/Facilitator/Chair/Organizer/etc) of (Committee or Group) YYYY-YY through YYYY-YY\n(Member/Facilitator/Chair/Organizer/etc) of (Committee or Group) YYYY-YY and YYYY-YY\n(Member/Facilitator/Chair/Organizer/etc) of (Committee or Group) YYYY-YY\n\nInstitution\n\n(Member/Facilitator/Chair/Organizer/etc) of (Committee or Group) YYYY-YY\n\n\n\nOther\nCourse name, Institution, Fall/Spring/Winter/Summer, Grader/Tutor/etc\nCourse name, Institution, Fall/Spring/Winter/Summer, Grader/Tutor/etc"
   },
   {
     "objectID": "resources.html",
@@ -263,7 +263,7 @@
     "href": "reading_list.html",
     "title": "Reading List",
     "section": "",
-    "text": "A list books (no textbooks or research papers!) I’m currently reading and have read in the recent past.\n\nCurrently Reading\n\nBook name, author\n\n\n\nOn my List\n\nBook name, author\nBook name, author\n\n\n\nReading History\n\nBook name, author\nBook name, author"
+    "text": "A list of books (no textbooks or research papers!) I’m currently reading and have read in the recent past.\n\nCurrently Reading\n\nBook name, author\n\n\n\nOn my List\n\nBook name, author\nBook name, author\n\n\n\nReading History\n\nBook name, author\nBook name, author"
   },
   {
     "objectID": "research.html",
@@ -284,6 +284,6 @@
     "href": "software.html",
     "title": "Software",
     "section": "",
-    "text": "Below is a list of R (or whatever software is relevant) packages I have contributed to.\n\npackagename\nRole either in full words or cre,‘aut’,ctb, etc. R package standard roles listed here\nPackage descption and how to access it.\n\n\npackagename\nRole either in full words or cre,‘aut’,ctb, etc. R package standard roles listed here\nPackage descption and how to access it.\n\n\npackagename\nRole either in full words or cre,‘aut’,ctb, etc. R package standard roles listed here\nPackage descption and how to access it."
+    "text": "Below is a list of R (or whatever software is relevant) packages I have contributed to.\n\npackagename\nRole either in full words or cre,aut,ctb, etc. R package standard roles listed here\nPackage description and how to access it.\n\n\npackagename\nRole either in full words or cre,aut,ctb, etc. R package standard roles listed here\nPackage description and how to access it.\n\n\npackagename\nRole either in full words or cre,aut,ctb, etc. R package standard roles listed here\nPackage description and how to access it."
   }
 ]
