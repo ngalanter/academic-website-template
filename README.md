@@ -17,9 +17,10 @@ This goal of this template is to provide several types of pages that might be re
     - A good option is to call the repository `your_github_username.github.io`, which gives it the URL `https://your_github_username.github.io`.
     - Otherwise, the URL will be `https://your_github_username.github.io/reponame/`.
 4. **(Already set up in template)** Add a `.nojekyll` file to the root of your repository so that github pages doesn't attempt to use Jekyll to render the site. You can do this via the terminal command: `touch .nojekyll` (Mac/Linx) or `copy NUL .nojekyll` (Windows).
-5. Commit the website to your local repository and then push it to github.
-6. Go to the repository on the github website, then go to "Settings" and then click on the "Pages" section. Make sure the source is set to "Deploy from a Branch" and choose the "main" branch and the "/docs" folder.
-7. Your site will now be updated and re-deployed anytime you push commits to the main branch. You can go the the "Actions" tab of the repository to see a record of these deployments and whether they ran successfully.
+5. Type the command `quarto render` into the terminal to make sure the site is fully rendered.
+6. Commit the website to your local repository and then push it to github.
+7. Go to the repository on the github website, then go to "Settings" and then click on the "Pages" section. Make sure the source is set to "Deploy from a Branch" and choose the "main" branch and the "/docs" folder.
+8. Your site will now be updated and re-deployed anytime you push commits to the main branch. You can go the the "Actions" tab of the repository to see a record of these deployments and whether they ran successfully.
 
 ## Auto Update Option
 
