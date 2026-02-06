@@ -1,6 +1,6 @@
 ## Overview
 
-This is a template for a personal website created with grad students and postdocs in mind. However, others may find it a helpful template as well! We're hopeful that it will be relevant to those seeking industry as well as academic positions, however we are more familiar with academic websites. See the rendered template here: <https://ngalanter.github.io/grad-postdoc-website-template>.
+This is a template for an academic personal website. It was created with grad students and postdocs in mind, however, others may find it a helpful template as well! We're hopeful that it will be relevant to those seeking industry as well as academic positions, however we are more familiar with academic websites. See the rendered template here: <https://ngalanter.github.io/academic-website-template>.
 
 This template uses quarto, you can learn more about quarto websites here: <https://quarto.org/docs/websites>.
 
