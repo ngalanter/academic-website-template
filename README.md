@@ -6,7 +6,7 @@ This template uses quarto, you can learn more about quarto websites here: <https
 
 This template is published via github pages. See below for a suggested publishing workflow which is essentially copied from the first suggested workflow in the [quarto github pages documentation](https://quarto.org/docs/publishing/github-pages.html). That page also lists other possible github pages workflows. There are many other options for publishing quarto websites, see [this page](https://quarto.org/docs/publishing/) for more information.
 
-This template also allows for auto-updating of page content. You can use the template without enabling auto-updating, just delete/ignore the `auto_update.R` file and detele/ignore all blocks that start with `::: {.content-hidden unless-format="markdown"}`. For more information about auto-updating, see the last section of this readme.
+This template also allows for auto-updating of page content. You can use the template without enabling auto-updating, just delete/ignore the `auto_update.R` file and delete/ignore all blocks that start with `::: {.content-hidden unless-format="markdown"}`. For more information about auto-updating, see the last section of this readme.
 
 This goal of this template is to provide several types of pages that might be relevant, but most personal websites don't have all of these pages!
 
