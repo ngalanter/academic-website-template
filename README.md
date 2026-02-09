@@ -12,7 +12,7 @@ This goal of this template is to provide several types of pages that might be re
 
 ## Suggested Github Pages Publication Workflow
 
-1. **(Already set up in template)** Make sure that the readered pages go to a docs folder, by having `output-dir: docs` in the `quarto.yml` file.
+1. **(Already set up in template)** Make sure that the rendered pages go to a docs folder, by having `output-dir: docs` in the `quarto.yml` file.
 2. Create a local git repository (for example with github desktop) in the same folder that contains the website R project.
     - A good option is to call the repository `your_github_username.github.io`, which gives it the URL `https://your_github_username.github.io`.
     - Otherwise, the URL will be `https://your_github_username.github.io/reponame/`.
