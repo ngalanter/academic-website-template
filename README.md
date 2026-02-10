@@ -35,7 +35,6 @@ This template also allows for auto-updating of page content. You can use the tem
     - It is also possible to have a sidebar for nagivation instead, see [here](https://quarto.org/docs/websites/website-navigation.html#side-navigation)
     - To add a table of contents to each page, add `toc: true` to `_quarto.yml` under `html:` within `format:`. This is useful if you have long pages in your website. (You can also do this just for a specific page, see the `cv_resume1.qmd` page for an example)
 - Adding/removing pages: To add a new page, create a new qmd file and add a reference to it in the `_quarto.yml` file under `navbar:`. To remove a page, remove it from `navbar:` and then delete the corresponding qmd file.
-- 
 
 ## 4. Auto update option
 
