@@ -12,10 +12,10 @@ This goal of this template is to provide several types of pages that might be re
 
 ## Suggested Github Pages Publication Workflow
 
-1. **(Already set up in template)** Make sure that the rendered pages go to a docs folder, by having `output-dir: docs` in the `quarto.yml` file.
-2. Fork this git repository and create a local copy (for example with github desktop) in the same folder that contains the website R project.
+1. Fork this git repository and create a local copy (for example with github desktop) in the same folder that contains the website R project.
     - A good option is to call the repository `your_github_username.github.io`, which gives it the URL `https://your_github_username.github.io`.
     - Otherwise, the URL will be `https://your_github_username.github.io/reponame/`.
+2. **(Already set up in template)** Make sure that the rendered pages go to a docs folder, by having `output-dir: docs` in the `quarto.yml` file.
 3. **(Already set up in template)** Add a `.nojekyll` file to the root of your repository so that github pages doesn't attempt to use Jekyll to render the site. You can do this via the terminal command: `touch .nojekyll` (Mac/Linx) or `copy NUL .nojekyll` (Windows).
 4. Type the command `quarto render` into the terminal to make sure the site is fully rendered.
 5. Commit the website to your local repository and then push it to github.
