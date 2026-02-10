@@ -10,19 +10,20 @@ This template also allows for auto-updating of page content. You can use the tem
 
 This goal of this template is to provide several types of pages that might be relevant, but most personal websites don't have all of these pages!
 
-## Suggested Github Pages Publication Workflow
+## How to use this template with Github pages
 
-1. Fork this git repository and create a local copy (for example with github desktop) in the same folder that contains the website R project.
+1. Create a new repository from this template (see [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)) and create a local copy on your computer (for example with github desktop).
     - A good option is to call the repository `your_github_username.github.io`, which gives it the URL `https://your_github_username.github.io`.
     - Otherwise, the URL will be `https://your_github_username.github.io/reponame/`.
 2. **(Already set up in template)** Make sure that the rendered pages go to a docs folder, by having `output-dir: docs` in the `quarto.yml` file.
 3. **(Already set up in template)** Add a `.nojekyll` file to the root of your repository so that github pages doesn't attempt to use Jekyll to render the site. You can do this via the terminal command: `touch .nojekyll` (Mac/Linx) or `copy NUL .nojekyll` (Windows).
-4. Type the command `quarto render` into the terminal to make sure the site is fully rendered.
-5. Commit the website to your local repository and then push it to github.
-6. Go to the repository on the github website, then go to "Settings" and then click on the "Pages" section. Make sure the source is set to "Deploy from a Branch" and choose the "main" branch and the "/docs" folder.
-7. Your site will now be updated and re-deployed anytime you push commits to the main branch. You can go the the "Actions" tab of the repository to see a record of these deployments and whether they ran successfully.
+4. Personalize the template in the editor of your choice, such as RStudio
+5. Type the command `quarto render` into the terminal to make sure the site is fully rendered.
+6. Commit the website to your local repository and then push it to github.
+7. Go to the repository on the github website, then go to "Settings" and then click on the "Pages" section. Make sure the source is set to "Deploy from a Branch" and choose the "main" branch and the "/docs" folder.
+8. Your site will now be updated and re-deployed anytime you push commits to the main branch. You can go the the "Actions" tab of the repository to see a record of these deployments and whether they ran successfully.
 
-## Auto Update Option
+## Auto update option
 
 This template has the option to store publications, presentatations, posters, and other content in a `csv` and then run an R script to update the relevant sections of pages whenever you publish a new paper, have a new presentation, etc. and add to the `csv`. See `sample_content.csv` for an example of what this `csv` could look like. The `auto_update.R` file contains the update script, which was used to generate some of the pages in this template. We expect that you will want to customize the updating and have written the file to try to make it straightforward to do so. 
 
