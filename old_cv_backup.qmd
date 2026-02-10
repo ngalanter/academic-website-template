@@ -5,7 +5,8 @@ format:
     toc: true
   pdf:
     colorlinks: false
-    mainfont: Open Sans
+    mainfont: Arial
+    fontsize: 11pt
     include-in-header:
       text: |
         \usepackage[lmargin = 0.7in,rmargin = 0.7in,
@@ -34,6 +35,9 @@ format-links: [pdf]
 
 ::: {.content-hidden when-format="pdf"}
 Just as with a standard cv or resume, use whatever headings and format makes the most sense for you. These sections are just examples. See [here](https://quarto.org/docs/authoring/markdown-basics.html) for an overview of markdown formatting in quarto.
+
+For the `mainfont:` pdf option in the header, fonts that work will generally be in 
+`~/Library/Fonts` (MacOS) or `C:\Windows\Fonts` (Windows). The pdf is rendered by the site creator so any font found on the site creator's computer can be used. See also <https://quarto.org/docs/reference/formats/pdf.html#fonts> .
 :::
 
 
