@@ -1,16 +1,17 @@
-## Overview
+## 1. Overview
 
-This is a template for an academic personal website. It was created with grad students and postdocs in mind, however, others may find it a helpful template as well! We're hopeful that it will be relevant to those seeking industry as well as academic positions, however we are more familiar with academic websites. See the rendered template here: <https://ngalanter.github.io/academic-website-template>.
+This is a template for an academic personal website. It was created with grad students and postdocs in mind, however, others may find it a helpful template as well! We're hopeful that it will be relevant to those seeking industry as well as academic positions, however we are more familiar with academic websites. See the rendered template here: <https://ngalanter.github.io/academic-website-template>. 
+This goal of this template is to provide several types of pages that might be relevant, but most personal websites don't have all of these pages!
 
 This template uses quarto, you can learn more about quarto websites here: <https://quarto.org/docs/websites>.
 
-This template is published via github pages. See below for a suggested publishing workflow which is essentially copied from the first suggested workflow in the [quarto github pages documentation](https://quarto.org/docs/publishing/github-pages.html). That page also lists other possible github pages workflows. There are many other options for publishing quarto websites, see [this page](https://quarto.org/docs/publishing/) for more information.
+This template is published via github pages. Section 2 uses the first suggested workflow on [quarto github pages documentation](https://quarto.org/docs/publishing/github-pages.html). That page also lists other possible github pages workflows. There are many other options for publishing quarto websites, see [this page](https://quarto.org/docs/publishing/) for more information.
 
-This template also allows for auto-updating of page content. You can use the template without enabling auto-updating, just delete/ignore the `auto_update.R` file and delete/ignore all blocks that start with `::: {.content-hidden unless-format="markdown"}`. For more information about auto-updating, see the last section of this readme.
+Secton 3 goes over some quick ways to customize how your website looks.
 
-This goal of this template is to provide several types of pages that might be relevant, but most personal websites don't have all of these pages!
+This template also allows for auto-updating of page content. You can use the template without enabling auto-updating, just delete/ignore the `auto_update.R` file and delete/ignore all blocks that start with `::: {.content-hidden unless-format="markdown"}`. For more information about auto-updating, see the section 4 of this readme.
 
-## How to use this template with Github pages
+## 2. How to use this template with Github pages
 
 1. Create a new repository from this template (see [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)) and create a local copy on your computer (for example with github desktop).
     - A good option is to call the repository `your_github_username.github.io`, which gives it the URL `https://your_github_username.github.io`.
@@ -23,7 +24,17 @@ This goal of this template is to provide several types of pages that might be re
 7. Go to the repository on the github website, then go to "Settings" and then click on the "Pages" section. Make sure the source is set to "Deploy from a Branch" and choose the "main" branch and the "/docs" folder.
 8. Your site will now be updated and re-deployed anytime you push commits to the main branch. You can go the the "Actions" tab of the repository to see a record of these deployments and whether they ran successfully.
 
-## Auto update option
+## 3. Quick customizations
+
+- Theme: This template uses the `minty` theme with slight color customization, to change the theme go to the `_quarto.yml` file. See [here](https://quarto.org/docs/output-formats/html-themes.html) for more details about themes and see [here](https://bootswatch.com/) for a preview of what the pre-made themes generally look like.
+    - To change just the header color (`primary`) or the color that the drop-down menu options change to when the cursor is over them (`secondary`) use the `custom.scss` file and pick new hex colors.
+- Index/about page set-up: There are built in arrangements for the picture and text on the index/about page. This template uses `solana` but there are 4 other options [here](https://quarto.org/docs/websites/website-about.html#templates).
+    - For the `jolla`, `solana`, and `trestles` layouts you can choose between `rectangle`, `round`, and `rounded` image shapes
+- Navigation placement (navigation details [here](https://quarto.org/docs/websites/website-navigation.html))
+    - This template has nagivation in a top navigation bar to the right, specified by putting all items under `right:`. It is also possible to put items under `left:` instead or both `left:` and `right:`.
+    - It is also possible to have a sidebar for nagivation instead, see [here](https://quarto.org/docs/websites/website-navigation.html#side-navigation)
+
+## 4. Auto update option
 
 This template has the option to store publications, presentatations, posters, and other content in a `csv` and then run an R script to update the relevant sections of pages whenever you publish a new paper, have a new presentation, etc. and add to the `csv`. See `sample_content.csv` for an example of what this `csv` could look like. The `auto_update.R` file contains the update script, which was used to generate some of the pages in this template. We expect that you will want to customize the updating and have written the file to try to make it straightforward to do so. 
 
