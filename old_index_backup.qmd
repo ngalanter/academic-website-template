@@ -7,7 +7,7 @@ subtitle: |
 
 about:
   template: solana
-  image: portrait_pic.jpg
+  image: files/portrait_pic.jpg
   image-width: 10em
   image-shape: round
   links:

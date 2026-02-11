@@ -278,7 +278,9 @@ publications <- function(old_publications,content){
 
 # run the update ------------------------------
 
-content <- read.csv("sample_content.csv")
+path <- getwd()
+
+content <- read.csv(paste0(path,"/files/sample_content.csv"))
 
 #when no month listed, eg for a paper, putting as end of year by default
 content <- content %>% 
@@ -296,21 +298,21 @@ new_index <- index(old_index,content)
 writeLines(new_index,"index.qmd")
 
 #updating cv
-old_cv <- readLines("cv_resume1.qmd")
+old_cv <- readLines(paste0(path,"/pages/cv_resume1.qmd"))
 
 writeLines(old_cv,"old_cv_backup.qmd")
 
 new_cv <- cv(old_cv,content)
 
-writeLines(new_cv,"cv_resume1.qmd")
+writeLines(new_cv,paste0(path,"/pages/cv_resume1.qmd"))
 
 #updating publications
-old_publications <- readLines("publications.qmd")
+old_publications <- readLines(paste0(path,"/pages/publications.qmd"))
 
 writeLines(old_publications,"old_publications_backup.qmd")
 
 new_publications <- publications(old_publications,content)
 
-writeLines(new_publications,"publications.qmd")
+writeLines(new_publications,paste0(path,"/pages/publications.qmd"))
 
 

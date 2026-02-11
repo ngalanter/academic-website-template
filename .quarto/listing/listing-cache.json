@@ -1,6 +1,6 @@
 {
   "listingMap": {
-    "pages/blog.qmd": [
+    "pages\\blog.qmd": [
       "../posts/*.qmd"
     ]
   }
