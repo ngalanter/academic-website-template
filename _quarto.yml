@@ -5,7 +5,7 @@ project:
 website:
   title: Name
   navbar:
-    right:
+    left:
       - href: index.qmd
         text: About
       - text: Research/Projects
