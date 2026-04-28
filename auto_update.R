@@ -285,8 +285,10 @@ content <- read.csv(paste0(path,"/files/sample_content.csv"))
 #when no month listed, eg for a paper, putting as end of year by default
 content <- content %>% 
   mutate(num_month = match(month,month.name),
-         num_month = if_else(is.na(num_month),12,num_month)) %>%
-  arrange(desc(year),desc(num_month))
+         num_month = if_else(is.na(num_month),12,num_month),
+         num_year = if_else(year == "Forthcoming",
+                            year(Sys.time()),as.numeric(year))) %>%
+  arrange(desc(num_year),desc(num_month),desc(day))
 
 #updating news section of index
 old_index <- readLines("index.qmd")
